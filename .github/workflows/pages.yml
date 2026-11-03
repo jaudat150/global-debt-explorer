@@ -6,6 +6,8 @@ name: Publish website (GitHub Pages)
 #   APP_URL                   the Streamlit app address, for "explore interactively" links
 #   SITE_BASE_URL             a custom domain, e.g. https://debtatlas.org/
 #   GOOGLE_SITE_VERIFICATION  the content value from Google Search Console's HTML-tag method
+#   PATREON_URL               e.g. https://www.patreon.com/<name> (shown on /support/)
+#   CRYPTO_DONATIONS          one "label|address" per line, e.g. "USDT (TRC-20)|T..." (shown on /support/)
 on:
   push:
     branches: [main]
@@ -40,6 +42,8 @@ jobs:
           APP_URL: ${{ vars.APP_URL }}
           SITE_BASE_URL: ${{ vars.SITE_BASE_URL }}
           GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
+          PATREON_URL: ${{ vars.PATREON_URL }}
+          CRYPTO_DONATIONS: ${{ vars.CRYPTO_DONATIONS }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

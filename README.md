@@ -340,6 +340,12 @@ the team works: [docs/TEAM_PLAYBOOK.md](docs/TEAM_PLAYBOOK.md).
 Contributions of every size are welcome — reporting a stale number is as valuable as code. Adding an indicator is
 usually about ten lines in `src/catalog.py`. See [CONTRIBUTING.md](CONTRIBUTING.md) and [ROADMAP.md](ROADMAP.md).
 
+## Support the project
+
+The atlas is free, ad-free and maintained in spare time. If it is useful to you, see
+[ways to support it](https://jaudat150.github.io/global-debt-explorer/support/) — a donation, a star, a data fix or a
+citation all help.
+
 ## Licence and data attribution
 
 Code: [MIT](LICENSE). Data remain subject to their providers' terms:

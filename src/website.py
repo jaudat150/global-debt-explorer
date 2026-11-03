@@ -8,6 +8,7 @@ module writes plain HTML pages that load instantly and rank well:
                              who it owes, who owes it, FAQ — all in readable sentences
 * ``/indicator/<slug>/``     one page per indicator (37): full ranking with sources
 * ``/data/``                 every dataset with download links (Google Dataset Search)
+* ``/support/``              donation options (PATREON_URL, CRYPTO_DONATIONS) and other ways to help
 * ``sitemap.xml``, ``robots.txt``, ``404.html``
 
 Every page carries a unique title and description with real numbers, a canonical
@@ -28,7 +29,7 @@ import os
 import re
 import shutil
 import unicodedata
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
@@ -202,10 +203,10 @@ def render(page: Page, *, base_url: str, app_url: str | None, generated: str, ve
 {jsonld}
 </head><body>
 <header class="top"><div class="wrap"><a class="brand" href="{root or './'}">🌐 {SITE_NAME}</a>
-<nav><a href="{root}indicator/">Indicators</a><a href="{root}country/">Countries</a><a href="{root}data/">Data &amp; API</a>{app_link}<a href="{REPO_URL}">GitHub</a></nav></div></header>
+<nav><a href="{root}indicator/">Indicators</a><a href="{root}country/">Countries</a><a href="{root}data/">Data &amp; API</a>{app_link}<a href="{REPO_URL}">GitHub</a><a href="{root}support/">❤ Support</a></nav></div></header>
 <main><div class="wrap">{page.body}</div></main>
 <footer><div class="wrap">{SITE_NAME} — open source (MIT) by {AUTHOR} and contributors · Data: World Bank, IMF, SIPRI, WHO, UNESCO and other
-providers named on each value · Updated {generated} · <a href="{REPO_URL}">Source code</a> · <a href="{root}data/">Download the data</a></div></footer>
+providers named on each value · Updated {generated} · <a href="{REPO_URL}">Source code</a> · <a href="{root}data/">Download the data</a> · <a href="{root}support/">Support the project</a></div></footer>
 </body></html>
 """
 
@@ -517,18 +518,65 @@ def home_page(data: SiteData, *, base_url: str, app_url: str | None) -> Page:
     return Page("", f"{SITE_NAME} — Government Debt, Spending & Who Owes Whom for Every Country", description, body, schemas, priority=1.0)
 
 
+@dataclass
+class Funding:
+    """Donation options, read from repository variables at build time (no code change to add them)."""
+
+    patreon_url: str | None = None
+    crypto: list[tuple[str, str]] = field(default_factory=list)   # (label, address), e.g. ("USDT (TRC-20)", "T...")
+
+    @classmethod
+    def from_values(cls, patreon_url: str | None, crypto_text: str | None) -> "Funding":
+        """``crypto_text`` holds one ``label|address`` per line."""
+        crypto = []
+        for line in (crypto_text or "").splitlines():
+            if "|" in line:
+                label, address = (part.strip() for part in line.split("|", 1))
+                if label and address:
+                    crypto.append((label, address))
+        url = (patreon_url or "").strip() or None
+        return cls(patreon_url=url if url and url.startswith("https://") else None, crypto=crypto)
+
+    @property
+    def has_donations(self) -> bool:
+        return bool(self.patreon_url or self.crypto)
+
+
+def support_page(funding: Funding) -> Page:
+    parts = [f'<h1>Support the {SITE_NAME}</h1>'
+             '<p class="lead">The atlas is free, has no ads and is built in spare time. Donations pay for hosting and the hours '
+             'spent keeping every number current and sourced.</p>']
+    if funding.patreon_url:
+        parts.append(f'<p><a class="btn" href="{esc(funding.patreon_url)}" rel="noopener">❤ Support on Patreon</a></p>')
+    if funding.crypto:
+        rows = "".join(f'<tr><td>{esc(label)}</td><td><code>{esc(address)}</code></td></tr>' for label, address in funding.crypto)
+        parts.append('<h2>Crypto</h2><div class="tablewrap"><table><thead><tr><th>Network</th><th>Address</th></tr></thead>'
+                     f'<tbody>{rows}</tbody></table></div>'
+                     '<p class="note">Send only the named coin on the named network; anything else is lost.</p>')
+    if not funding.has_donations:
+        parts.append('<p class="note">Donation options are coming soon.</p>')
+    parts.append('<h2>Other ways to help</h2><ul>'
+                 f'<li><a href="{REPO_URL}">Star the project on GitHub</a> and share it.</li>'
+                 f'<li><a href="{REPO_URL}/issues/new/choose">Report a stale or wrong number</a>.</li>'
+                 f'<li><a href="{REPO_URL}/blob/main/CONTRIBUTING.md">Contribute</a> an indicator, a fix or a translation.</li>'
+                 f'<li>Cite the project in your work (<a href="{REPO_URL}/blob/main/CITATION.cff">CITATION.cff</a>).</li></ul>')
+    description = f"Ways to support the free, open-source {SITE_NAME}: donations, contributions and citations."
+    return Page("support/", f"Support the project | {SITE_NAME}", description, "".join(parts), [], priority=0.3)
+
+
 # ---------------------------------------------------------------------------
 # Build
 # ---------------------------------------------------------------------------
 
 def build(out: Path, *, base_url: str = SITE_URL, app_url: str | None = None, export_dir: Path = EXPORT_DIR,
-          verification: str | None = None) -> dict[str, int]:
+          verification: str | None = None, funding: Funding | None = None) -> dict[str, int]:
     data = SiteData.load(export_dir)
     base_url = base_url if base_url.endswith("/") else base_url + "/"
     pages = [home_page(data, base_url=base_url, app_url=app_url), data_page(data, base_url=base_url)]
     pages += index_pages(data, base_url=base_url, app_url=app_url)
     pages += [country_page(data, iso3, base_url=base_url, app_url=app_url) for iso3 in data.countries["iso3"]]
     pages += [indicator_page(data, i.id, base_url=base_url, app_url=app_url) for i in INDICATORS]
+    pages.append(support_page(funding or Funding()))
 
     if out.exists():
         shutil.rmtree(out)
@@ -561,9 +609,11 @@ def main(argv: list[str] | None = None) -> int:
     b.add_argument("--app-url", default=os.getenv("APP_URL") or None)
     b.add_argument("--exports", type=Path, default=EXPORT_DIR)
     b.add_argument("--google-verification", default=os.getenv("GOOGLE_SITE_VERIFICATION") or None)
+    b.add_argument("--patreon-url", default=os.getenv("PATREON_URL") or None)
+    b.add_argument("--crypto", default=os.getenv("CRYPTO_DONATIONS") or None, help='one "label|address" per line')
     args = parser.parse_args(argv)
     stats = build(args.out, base_url=args.base_url, app_url=args.app_url, export_dir=args.exports,
-                  verification=args.google_verification)
+                  verification=args.google_verification, funding=Funding.from_values(args.patreon_url, args.crypto))
     print(f"Built {stats['pages']} pages ({stats['countries']} countries, {stats['indicators']} indicators) → {args.out}")
     return 0
 

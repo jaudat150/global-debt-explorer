@@ -1,6 +1,6 @@
 """Project-wide constants. Change REPO_SLUG once if the GitHub repository is renamed."""
 
-__version__ = "0.1.0"
+__version__ = "3.4.0"
 
 REPO_SLUG = "Jaudat150/global-debt-explorer"
 BRANCH = "main"

@@ -33,7 +33,7 @@ BMU,BM,Bermuda,32.2966,-64.7636
 BOL,BO,Bolivia,-16.666,-64.5934
 BRA,BR,Brazil,-12.0987,-49.5594
 BRB,BB,Barbados,13.1637,-59.569
-BRN,BN,Brunei Darussalam,4.4483,114.5519
+BRN,BN,Brunei,4.4483,114.5519
 BTN,BT,Bhutan,27.5367,90.0403
 BVT,BV,Bouvet Island,-54.42,3.36
 BWA,BW,Botswana,-22.1026,24.1792
@@ -45,12 +45,12 @@ CHL,CL,Chile,-38.1518,-72.3189
 CHN,CN,China,32.4982,106.3373
 CIV,CI,Côte d'Ivoire,7.4914,-5.5686
 CMR,CM,Cameroon,4.585,12.4735
-COD,CD,"Congo, The Democratic Republic of the",-1.8582,23.4588
-COG,CG,Congo,0.1423,15.9005
+COD,CD,DR Congo,-1.8582,23.4588
+COG,CG,Republic of the Congo,0.1423,15.9005
 COK,CK,Cook Islands,-21.216,-159.7857
 COL,CO,Colombia,3.3731,-73.1743
 COM,KM,Comoros,-11.7277,43.3181
-CPV,CV,Cabo Verde,15.0748,-23.6394
+CPV,CV,Cape Verde,15.0748,-23.6394
 CRI,CR,Costa Rica,10.0651,-84.0779
 CUB,CU,Cuba,21.334,-77.9759
 CUW,CW,Curaçao,12.145,-68.9206
@@ -73,10 +73,10 @@ EST,EE,Estonia,58.7249,25.8671
 ETH,ET,Ethiopia,8.0328,39.0886
 FIN,FI,Finland,63.2524,27.2764
 FJI,FJ,Fiji,-17.8261,177.9754
-FLK,FK,Falkland Islands (Malvinas),-51.6089,-58.7386
+FLK,FK,Falkland Islands,-51.6089,-58.7386
 FRA,FR,France,46.6961,2.5523
 FRO,FO,Faroe Islands,62.1856,-7.0584
-FSM,FM,"Micronesia, Federated States of",6.8876,158.234
+FSM,FM,Micronesia,6.8876,158.234
 GAB,GA,Gabon,-0.4377,11.8359
 GBR,GB,United Kingdom,54.4027,-2.1163
 GEO,GE,Georgia,41.8701,43.7357
@@ -183,12 +183,12 @@ PRI,PR,Puerto Rico,18.2347,-66.4811
 PRK,KP,North Korea,39.8853,126.4445
 PRT,PT,Portugal,39.6067,-8.2718
 PRY,PY,Paraguay,-21.6745,-60.1464
-PSE,PS,"Palestine, State of",32.0474,35.2913
+PSE,PS,Palestine,32.0474,35.2913
 PYF,PF,French Polynesia,-17.6281,-149.4616
 QAT,QA,Qatar,25.2374,51.1435
 REU,RE,Réunion,-21.12,55.53
 ROU,RO,Romania,45.7332,24.9726
-RUS,RU,Russian Federation,58.2494,44.6865
+RUS,RU,Russia,58.2494,44.6865
 RWA,RW,Rwanda,-1.8972,30.1039
 SAU,SA,Saudi Arabia,23.8069,44.6996
 SDN,SD,Sudan,16.3307,29.2607
@@ -205,7 +205,7 @@ SOM,SO,Somalia,3.5689,45.1924
 SPM,PM,Saint Pierre and Miquelon,47.0403,-56.3324
 SRB,RS,Serbia,44.1899,20.788
 SSD,SS,South Sudan,7.2305,30.3902
-STP,ST,Sao Tome and Principe,0.9709,7.021
+STP,ST,São Tomé and Príncipe,0.9709,7.021
 SUR,SR,Suriname,4.144,-55.9109
 SVK,SK,Slovakia,48.734,19.0499
 SVN,SI,Slovenia,46.0608,14.9153
@@ -225,7 +225,7 @@ TLS,TL,Timor-Leste,-8.8037,125.8547
 TON,TO,Tonga,-21.21,-175.163
 TTO,TT,Trinidad and Tobago,10.9989,-60.9184
 TUN,TN,Tunisia,33.6873,9.0079
-TUR,TR,Türkiye,39.3454,34.5083
+TUR,TR,Turkey,39.3454,34.5083
 TUV,TV,Tuvalu,-8.5137,179.2096
 TWN,TW,Taiwan,23.6524,120.8682
 TZA,TZ,Tanzania,-6.0519,34.9592
@@ -235,7 +235,7 @@ UMI,UM,United States Minor Outlying Islands,19.2857,166.6445
 URY,UY,Uruguay,-32.9611,-55.9669
 USA,US,United States,39.5385,-97.4826
 UZB,UZ,Uzbekistan,41.6936,64.0054
-VAT,VA,Holy See (Vatican City State),41.9033,12.4534
+VAT,VA,Vatican City,41.9033,12.4534
 VCT,VC,Saint Vincent and the Grenadines,13.0879,-61.3359
 VEN,VE,Venezuela,7.1825,-64.5994
 VGB,VG,"Virgin Islands, British",18.4266,-64.6366

@@ -33,7 +33,7 @@ from src.processor import (
 from src.relationship_map import build_relationship_map, extract_map_action, flag_emoji, iso3_from_properties
 from src.ui_state import apply_pending_creditor_selection, apply_pending_debtor_selection
 from src import atlas_view, developer_view, share, spending_view
-from debt_atlas._meta import SITE_URL
+from debt_atlas._meta import REPO_URL, SITE_URL
 
 SUPPORT_URL = SITE_URL + "support/"
 
@@ -665,6 +665,8 @@ VIEWS: dict[str, tuple[str, str, str]] = {
                 "How current every indicator is, where to find newer data, and how to cite."),
     "developers": ("🧑‍💻 Developers", "Developers & researchers",
                    "Download every dataset, read every API, and build on this project."),
+    "python": ("🐍 Python library", "debt-atlas — the Python library",
+               "pip install debt-atlas, then get any number in this atlas as a pandas DataFrame in one line."),
 }
 
 
@@ -693,6 +695,22 @@ def _share_button() -> None:
         st.caption("Anyone opening it sees the same view, country and indicator. The address bar always has it too.")
 
 
+def _support_footer() -> None:
+    """Donation and repository links at the bottom of every view."""
+    st.markdown(
+        f"""
+        <div style="margin:26px 0 6px;padding:16px 18px;border:1px solid #dce5f1;border-radius:14px;background:#f6f9fe;
+                    text-align:center;color:#33435c;font-size:14px;line-height:1.6">
+          Want to help us with future research and open-source projects?<br>
+          <a href="{SUPPORT_URL}" target="_blank" rel="noopener" style="font-weight:700">❤ Donate</a> &nbsp;·&nbsp;
+          <a href="{REPO_URL}" target="_blank" rel="noopener" style="font-weight:700">⭐ GitHub repository</a> &nbsp;·&nbsp;
+          <a href="?view=python" target="_self" style="font-weight:700">🐍 Python library</a>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 def main() -> None:
     from src.indicator_data import country_codes
     from src.spending import ITEM_BY_ID
@@ -712,6 +730,7 @@ def main() -> None:
         _share_button()
     try:
         _render_view(view)
+        _support_footer()
     finally:
         share.sync_query(st.query_params, st.session_state)
 
@@ -746,6 +765,8 @@ def _render_view(view: str) -> None:
         spending_view.render_spending(index)
     elif view == "developers":
         developer_view.render_developers()
+    elif view == "python":
+        developer_view.render_library()
     else:
         atlas_view.render_sources(index)
     st.markdown(

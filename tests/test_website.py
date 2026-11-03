@@ -73,6 +73,22 @@ class WebsiteTests(unittest.TestCase):
         self.assertEqual(website.slugify("Côte d'Ivoire"), "cote-divoire")
         self.assertEqual(website.COMMON_NAMES["KOR"], "South Korea")
 
+    def test_support_page_is_linked_and_shows_coming_soon_without_options(self):
+        html = self.page("support")
+        self.assertIn("Donation options are coming soon", html)
+        self.assertIn('href="../../support/">❤ Support</a>', self.page("country/kenya"))
+        self.assertIn("support/</loc>", (self.site / "sitemap.xml").read_text(encoding="utf-8"))
+
+    def test_support_page_lists_patreon_and_crypto(self):
+        funding = website.Funding.from_values(
+            "https://www.patreon.com/example", "USDT (TRC-20) | TExampleAddress123\nnot a valid line\n")
+        self.assertEqual(funding.crypto, [("USDT (TRC-20)", "TExampleAddress123")])
+        html = website.support_page(funding).body
+        self.assertIn('href="https://www.patreon.com/example"', html)
+        self.assertIn("<code>TExampleAddress123</code>", html)
+        self.assertNotIn("coming soon", html)
+        self.assertIsNone(website.Funding.from_values("javascript:alert(1)", None).patreon_url)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -64,5 +64,8 @@ class ShareTests(unittest.TestCase):
         self.assertEqual(share.share_url(None, {"view": "atlas"}), "?view=atlas")
 
 
+    def test_python_view_is_shareable_without_country(self):
+        self.assertEqual(share.build_query({share.VIEW_KEY: "python", share.COUNTRY_KEY: "USA"}), {"view": "python"})
+
 if __name__ == "__main__":
     unittest.main()

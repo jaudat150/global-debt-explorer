@@ -54,7 +54,7 @@ Categories: `debt`, `spending`, `revenue`, `economy`, `flows`, `people`.
 debt-atlas rank military_usd -n 10
 debt-atlas latest gov_debt_gdp --countries Japan Italy
 debt-atlas who-owes Pakistan
-debt-atlas spending "United States" --csv > usa.csv
+debt-atlas --csv spending "United States" > usa.csv
 debt-atlas download ./atlas-data
 ```
 

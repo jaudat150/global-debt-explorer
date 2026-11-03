@@ -8,6 +8,8 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
+from src import library_docs
+
 from src.catalog import INDICATORS, SOURCE_DIRECTORY, markdown_catalog
 from src.exports import (
     FIELD_DOCS, REPO_RAW_BASE, RESOURCE_INFO, build_all_frames, build_bundle, catalog_document, countries_frame,
@@ -182,7 +184,10 @@ latest <- read_csv("{REPO_RAW_BASE}/latest_values.csv")''', language="r")
                               for s in SOURCE_DIRECTORY.values() if "API" in s.access))
 
     with code:
-        st.markdown("#### Python")
+        st.markdown("#### Python library — `pip install debt-atlas`")
+        st.code(f"{library_docs.INSTALL}\n\n{library_docs.QUICKSTART}", language="python")
+        st.caption("Full guide in the 🐍 Python library view.")
+        st.markdown("#### From a clone of the repository")
         st.code(PYTHON_API, language="python")
         st.markdown("#### Command line")
         st.code(CLI, language="bash")
@@ -200,3 +205,18 @@ latest <- read_csv("{REPO_RAW_BASE}/latest_values.csv")''', language="r")
                                mime="application/json", key="gde_dev_dp")
         st.markdown("**Licences:** code MIT; data remain under each provider's terms — World Bank (CC BY 4.0), IMF, SIPRI, "
                     "WHO, UNESCO. Always cite the provider shown in each row's `source` column.")
+
+
+def render_library() -> None:
+    """The ``debt-atlas`` Python library: install, quick start, every function, command line."""
+    st.write(library_docs.TAGLINE)
+    st.code(library_docs.INSTALL, language="bash")
+    st.markdown(f"[debt-atlas on PyPI]({library_docs.PYPI_URL}) · [Full documentation]({library_docs.DOCS_URL})")
+    st.markdown("#### Quick start")
+    st.code(library_docs.QUICKSTART, language="python")
+    st.markdown("#### Every function")
+    st.dataframe(pd.DataFrame([{"Function": f"da.{name}", "Returns": what} for name, what in library_docs.FUNCTIONS]),
+                 hide_index=True, width="stretch")
+    st.markdown("#### Command line")
+    st.code(library_docs.CLI, language="bash")
+    st.caption(library_docs.NOTES)

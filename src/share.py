@@ -20,7 +20,7 @@ from urllib.parse import urlencode, urlsplit, urlunsplit
 
 from src.catalog import CATEGORY_BY_ID, INDICATOR_BY_ID
 
-VIEWS = ("atlas", "country", "spending", "debt", "sources", "developers")
+VIEWS = ("atlas", "country", "spending", "debt", "sources", "developers", "python")
 VIEW_KEY = "gde_view"
 COUNTRY_KEY = "gde_selected_country"          # shared selection (atlas_view.SELECTED_KEY)
 CATEGORY_KEY = "gde_atlas_category"
@@ -76,7 +76,7 @@ def build_query(state: Mapping[str, Any]) -> dict[str, str]:
     country = state.get(COUNTRY_KEY)
     if view == "debt":
         country = state.get("gde_debtor") or country
-    if country and view != "developers" and view != "sources":
+    if country and view not in ("developers", "sources", "python"):
         query["country"] = str(country)
     if view == "atlas":
         category = state.get(CATEGORY_KEY) or "debt"

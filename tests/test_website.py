@@ -90,5 +90,15 @@ class WebsiteTests(unittest.TestCase):
         self.assertIsNone(website.Funding.from_values("javascript:alert(1)", None).patreon_url)
 
 
+    def test_python_library_page_and_footer_links(self):
+        html = self.page("python")
+        self.assertIn("pip install debt-atlas", html)
+        self.assertIn("da.who_owes(", html)
+        self.assertIn('"@type": "SoftwareApplication"', html)
+        country = self.page("country/kenya")
+        self.assertIn('href="../../python/">Python</a>', country)
+        self.assertIn("Want to help us with future research and open-source projects?", country)
+        self.assertIn('href="../../support/">❤ Donate</a>', country)
+
 if __name__ == "__main__":
     unittest.main()

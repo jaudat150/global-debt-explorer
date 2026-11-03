@@ -9,7 +9,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: refresh-atlas-snapshot
@@ -18,9 +17,15 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    # The push key lives in this environment, which only the main branch may use.
+    environment: data-refresh
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Deploy key with write access; it is on the "protect main" bypass list,
+          # so the refreshed data lands on main without a pull request.
+          ssh-key: ${{ secrets.DATA_PUSH_KEY }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -35,21 +40,8 @@ jobs:
         run: python -m src.exports build
       - name: Validate exports (coverage, reference figures, consistency)
         run: python -m src.validate --out data/exports/VALIDATION.md
-      - name: Open a pull request with the refreshed data
-        # main is protected by the "protect main" ruleset, so the bot proposes a PR
-        # instead of pushing. A repository admin merges it (bypass) to publish.
-        uses: peter-evans/create-pull-request@v7
+      - name: Commit refreshed data to main
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          branch: data/weekly-snapshot
-          delete-branch: true
-          commit-message: "chore(data): weekly atlas snapshot and open-data exports"
-          title: "chore(data): weekly atlas snapshot and open-data exports"
-          body: |
-            Automated weekly refresh opened by the "Refresh atlas data snapshot" workflow.
-            See data/exports/VALIDATION.md in the diff for coverage and consistency checks.
-            Merge to publish; the website rebuilds on the next push to main.
-          labels: data
-          add-paths: |
-            data/indicator_snapshot.json
-            data/country_profiles_snapshot.json
-            data/exports/*
+          commit_message: "chore(data): weekly atlas snapshot and open-data exports"
+          file_pattern: data/indicator_snapshot.json data/country_profiles_snapshot.json data/exports/*

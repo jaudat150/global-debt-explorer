@@ -33,6 +33,9 @@ from src.processor import (
 from src.relationship_map import build_relationship_map, extract_map_action, flag_emoji, iso3_from_properties
 from src.ui_state import apply_pending_creditor_selection, apply_pending_debtor_selection
 from src import atlas_view, developer_view, share, spending_view
+from debt_atlas._meta import SITE_URL
+
+SUPPORT_URL = SITE_URL + "support/"
 
 LOGGER = logging.getLogger("global_debt_explorer.app")
 ROOT = Path(__file__).resolve().parent
@@ -319,7 +322,7 @@ def render_debt_view() -> None:
           <div><div class="hero-kicker">OPEN DATA · PUBLIC FINANCE · WORLD BANK IDS</div>
           <h1 id="gde-hero-title" class="hero-title" style="color:#19283e!important;opacity:1!important">Global Bilateral Debt Explorer</h1>
           <p class="hero-subtitle">Explore public borrowers, official creditor relationships and bilateral debt stocks — country by country, year by year.</p></div>
-          <div class="hero-right"><span class="header-chip live"><span class="header-dot"></span>{status_chip}</span><span class="header-chip">UPDATED {html.escape(generated)}</span></div>
+          <div class="hero-right"><span class="header-chip live"><span class="header-dot"></span>{status_chip}</span><span class="header-chip">UPDATED {html.escape(generated)}</span><a class="header-chip" href="{SUPPORT_URL}" target="_blank" rel="noopener" style="text-decoration:none">❤ SUPPORT</a></div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -673,7 +676,7 @@ def _view_header(view: str) -> None:
           <div><div class="hero-kicker">OPEN DATA · PUBLIC FINANCE · WORLD BANK · IMF</div>
           <h1 class="hero-title" style="color:#19283e!important;opacity:1!important">{html.escape(title)}</h1>
           <p class="hero-subtitle">{html.escape(subtitle)}</p></div>
-          <div class="hero-right"><span class="header-chip live"><span class="header-dot"></span>LIVE APIs · 24 H CACHE</span></div>
+          <div class="hero-right"><span class="header-chip live"><span class="header-dot"></span>LIVE APIs · 24 H CACHE</span><a class="header-chip" href="{SUPPORT_URL}" target="_blank" rel="noopener" style="text-decoration:none">❤ SUPPORT</a></div>
         </div>
         """,
         unsafe_allow_html=True,

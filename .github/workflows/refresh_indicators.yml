@@ -1,0 +1,40 @@
+name: Refresh atlas data snapshot
+
+on:
+  schedule:
+    # Weekly, Monday 03:40 UTC. World Bank and IMF publish on their own calendars;
+    # a weekly pull keeps the offline fallback within days of the live APIs.
+    - cron: "40 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-atlas-snapshot
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: python -m pip install -r requirements.txt
+      - name: Download every atlas indicator
+        run: python -m src.indicator_data refresh
+      - name: Refresh national debt profiles
+        run: python -m src.processor profiles || echo "Profile refresh skipped"
+      - name: Publish open-data exports (CSV + datapackage.json)
+        run: python -m src.exports build
+      - name: Validate exports (coverage, reference figures, consistency)
+        run: python -m src.validate --out data/exports/VALIDATION.md
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): weekly atlas snapshot and open-data exports"
+          file_pattern: data/indicator_snapshot.json data/country_profiles_snapshot.json data/exports/*

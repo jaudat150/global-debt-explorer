@@ -1,0 +1,11 @@
+Global Bilateral Debt Explorer — API Fix v5
+
+The v4 fetcher sent `/time/2000:2026`. IDS Time dimension variables are identified as `YR1970`, `YR1971`, etc.; the numeric range was routed by the API to a legacy service and produced HTTP 404.
+
+v5 uses the verified `/time/all` route, then applies the requested inclusive start/end year filter locally. It also:
+- reads pagination metadata from the top-level JSON envelope as well as the source object;
+- recursively splits creditor batches on HTTP 400 and HTTP 404;
+- skips and logs an individual counterpart-area value if the data endpoint cannot query it, preserving all other creditor observations;
+- excludes known aggregate counterpart-area entries before requesting, to avoid double-counting them.
+
+The default observation window remains 2000 through the current UTC year.

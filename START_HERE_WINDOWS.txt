@@ -1,0 +1,61 @@
+GLOBAL BILATERAL DEBT EXPLORER — WINDOWS QUICK START
+Version 3.4.0
+
+This is the complete source project: Streamlit dashboard, World Bank IDS
+bilateral fetcher, three-tier national profile fallback, processor, interactive
+map, tests, monthly GitHub Action, and documentation.
+
+IMPORTANT: data/bilateral_debt_cache.json is intentionally NOT included in the
+source ZIP. This prevents an empty cache from overwriting a dataset you have
+already downloaded. If the file already exists in your project folder, it stays
+untouched when you extract this ZIP over the project.
+
+1) Extract this ZIP into the folder containing app.py and requirements.txt.
+   Allow replacement of source files. Do not delete .venv or your data folder.
+
+2) Open CMD in that folder and activate your environment:
+
+   .venv\Scripts\activate.bat
+
+3) Install/update dependencies:
+
+   python -m pip install -r requirements.txt
+
+4) Run automated tests:
+
+   python -m unittest discover -s tests -v
+
+5) If data\bilateral_debt_cache.json already exists, do not run the fetcher
+   again just to enable country-level profiles. The World Bank/IMF profile layer
+   is loaded automatically by the dashboard and cached for 24 hours.
+
+6) If the bilateral cache does not exist, smoke-test one debtor:
+
+   python -m src.fetcher --debtor AGO --cache data\ids_smoke_test.json --workers 1
+
+   If successful, create the full bilateral cache:
+
+   python -m src.fetcher
+
+7) Launch the dashboard:
+
+   python -m streamlit run app.py
+
+8) Open http://localhost:8501
+
+The national profile fallback order is:
+   Tier 1: World Bank V2 DT.DOD.DLXF.CD, long-term external debt (USD)
+   Tier 2: IMF DataMapper GG_DEBT_GDP, general-government debt (% of GDP)
+   Tier 3: curated, source-dated local estimates
+
+These are different measures. The dashboard labels them separately. If all
+sources lack a value, the profile reads "No verified data"; it never invents a
+zero debt figure. Country map coordinates come from Natural Earth boundaries.
+
+For full instructions, metric definitions, source URLs, limitations, and
+architecture, read README.md.
+
+MAP TILES
+The map uses OpenStreetMap tiles by default and displays required attribution.
+The public tile service is best-effort and is not meant for heavy production
+traffic. Optional CARTO Positron requires your own CARTO_BASEMAP_API_KEY.

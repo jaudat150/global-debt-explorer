@@ -1,0 +1,1402 @@
+{
+  "generated_at_utc": "2026-11-02T20:35:58+00:00",
+  "categories": [
+    {
+      "id": "debt",
+      "label": "Debt & deficits",
+      "icon": "🏦",
+      "description": "How much governments and countries owe, and what it costs them."
+    },
+    {
+      "id": "spending",
+      "label": "Government spending",
+      "icon": "🧾",
+      "description": "Where public money goes: defence, health, education, interest, wages, subsidies."
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue & taxes",
+      "icon": "💰",
+      "description": "How governments raise money."
+    },
+    {
+      "id": "economy",
+      "label": "Economy",
+      "icon": "📈",
+      "description": "Output, growth, prices, jobs and the external balance."
+    },
+    {
+      "id": "flows",
+      "label": "External finance",
+      "icon": "🌍",
+      "description": "Aid, investment, remittances and reserves."
+    },
+    {
+      "id": "people",
+      "label": "People & development",
+      "icon": "👥",
+      "description": "Population, longevity, poverty and inequality."
+    }
+  ],
+  "indicators": [
+    {
+      "id": "gov_debt_gdp",
+      "name": "General government gross debt (% of GDP)",
+      "short": "Gov. debt",
+      "category": "debt",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "Gross debt of all levels of government (central, state, local, social security) as a share of GDP.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "GGXWDG_NGDP",
+          "label": "IMF World Economic Outlook",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP",
+          "portal_url": "https://www.imf.org/external/datamapper/GGXWDG_NGDP"
+        },
+        {
+          "provider": "imf",
+          "code": "GG_DEBT_GDP",
+          "label": "IMF Global Debt Database",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/GG_DEBT_GDP",
+          "portal_url": "https://www.imf.org/external/datamapper/GG_DEBT_GDP"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/en/Publications/WEO/weo-database",
+        "https://www.imf.org/external/datamapper/datasets/GDD",
+        "https://www.imf.org/en/Publications/FM",
+        "https://www.imf.org/external/pubs/ft/dsa/dsalist.pdf",
+        "https://unstats.un.org/home/nso_sites/"
+      ]
+    },
+    {
+      "id": "fiscal_balance_gdp",
+      "name": "Fiscal balance — net lending/borrowing (% of GDP)",
+      "short": "Fiscal balance",
+      "category": "debt",
+      "unit": "percent_of_gdp",
+      "scale": "diverging",
+      "description": "Revenue minus expenditure of general government. Negative = deficit.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "GGXCNL_NGDP",
+          "label": "IMF World Economic Outlook",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/GGXCNL_NGDP",
+          "portal_url": "https://www.imf.org/external/datamapper/GGXCNL_NGDP"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/en/Publications/WEO/weo-database",
+        "https://www.imf.org/en/Publications/FM",
+        "https://data-explorer.oecd.org/"
+      ]
+    },
+    {
+      "id": "external_debt_usd",
+      "name": "Total external debt stocks (current US$)",
+      "short": "External debt",
+      "category": "debt",
+      "unit": "usd",
+      "scale": "sequential",
+      "description": "Public, publicly guaranteed and private debt owed to non-residents, plus IMF credit and short-term debt.",
+      "caveat": "Covers low- and middle-income IDS reporters only; high-income countries are not in this series.",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "DT.DOD.DECT.CD",
+          "label": "World Bank International Debt Statistics",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/DT.DOD.DECT.CD?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.worldbank.org/en/programs/debt-statistics/ids",
+        "https://www.worldbank.org/en/programs/debt-statistics/qeds",
+        "https://www.imf.org/external/pubs/ft/dsa/dsalist.pdf"
+      ]
+    },
+    {
+      "id": "external_debt_gni",
+      "name": "External debt stocks (% of GNI)",
+      "short": "External debt / GNI",
+      "category": "debt",
+      "unit": "percent_of_gni",
+      "scale": "sequential",
+      "description": "Total external debt relative to gross national income.",
+      "caveat": "IDS reporters only (low- and middle-income economies).",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "DT.DOD.DECT.GN.ZS",
+          "label": "World Bank International Debt Statistics",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/DT.DOD.DECT.GN.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/DT.DOD.DECT.GN.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.worldbank.org/en/programs/debt-statistics/ids",
+        "https://www.imf.org/external/pubs/ft/dsa/dsalist.pdf"
+      ]
+    },
+    {
+      "id": "debt_service_exports",
+      "name": "Total debt service (% of exports)",
+      "short": "Debt service / exports",
+      "category": "debt",
+      "unit": "percent",
+      "scale": "sequential",
+      "description": "Principal and interest paid on external debt as a share of exports of goods, services and primary income.",
+      "caveat": "IDS reporters only.",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "DT.TDS.DECT.EX.ZS",
+          "label": "World Bank International Debt Statistics",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/DT.TDS.DECT.EX.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/DT.TDS.DECT.EX.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.worldbank.org/en/programs/debt-statistics/ids",
+        "https://www.imf.org/external/pubs/ft/dsa/dsalist.pdf"
+      ]
+    },
+    {
+      "id": "interest_pct_revenue",
+      "name": "Interest payments (% of revenue)",
+      "short": "Interest / revenue",
+      "category": "debt",
+      "unit": "percent",
+      "scale": "sequential",
+      "description": "Central government interest payments as a share of revenue — a direct measure of debt burden.",
+      "caveat": "Central government; coverage and recency vary by country.",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "GC.XPN.INTP.RV.ZS",
+          "label": "World Bank WDI (IMF GFS)",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/GC.XPN.INTP.RV.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/GC.XPN.INTP.RV.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://data.imf.org/",
+        "https://www.imf.org/en/Publications/FM",
+        "https://www.worldbank.org/en/programs/boost-portal/country-data"
+      ]
+    },
+    {
+      "id": "private_debt_gdp",
+      "name": "Private debt (% of GDP)",
+      "short": "Private debt",
+      "category": "debt",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "Debt of households and non-financial corporations.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "Privatedebt_all",
+          "label": "IMF Global Debt Database",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/Privatedebt_all",
+          "portal_url": "https://www.imf.org/external/datamapper/Privatedebt_all"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/external/datamapper/datasets/GDD",
+        "https://data.bis.org/"
+      ]
+    },
+    {
+      "id": "gov_expenditure_gdp",
+      "name": "General government expenditure (% of GDP)",
+      "short": "Total spending",
+      "category": "spending",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "Total spending of general government relative to GDP.",
+      "caveat": "Historical dataset; may lag the latest year. Check the IMF Fiscal Monitor for current estimates.",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "exp",
+          "label": "IMF Public Finances in Modern History",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/exp",
+          "portal_url": "https://www.imf.org/external/datamapper/exp"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/en/Publications/FM",
+        "https://www.imf.org/external/datamapper/datasets/FPP",
+        "https://data.imf.org/Datasets/GFS_COFOG",
+        "https://data-explorer.oecd.org/"
+      ]
+    },
+    {
+      "id": "military_gdp",
+      "name": "Military expenditure (% of GDP)",
+      "short": "Military",
+      "category": "spending",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "All current and capital spending on armed forces, defence ministries and military space activities.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "MS.MIL.XPND.GD.ZS",
+          "label": "SIPRI via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/MS.MIL.XPND.GD.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.sipri.org/databases/milex",
+        "https://data.imf.org/Datasets/GFS_COFOG"
+      ]
+    },
+    {
+      "id": "military_usd",
+      "name": "Military expenditure (current US$)",
+      "short": "Military (US$)",
+      "category": "spending",
+      "unit": "usd",
+      "scale": "sequential",
+      "description": "Military spending converted to US dollars at market exchange rates.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "MS.MIL.XPND.CD",
+          "label": "SIPRI via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/MS.MIL.XPND.CD?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/MS.MIL.XPND.CD"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.sipri.org/databases/milex"
+      ]
+    },
+    {
+      "id": "military_pct_gov",
+      "name": "Military expenditure (% of government spending)",
+      "short": "Military / budget",
+      "category": "spending",
+      "unit": "percent",
+      "scale": "sequential",
+      "description": "Military spending as a share of general government expenditure.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "MS.MIL.XPND.ZS",
+          "label": "SIPRI via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/MS.MIL.XPND.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/MS.MIL.XPND.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.sipri.org/databases/milex"
+      ]
+    },
+    {
+      "id": "health_gov_gdp",
+      "name": "Government health expenditure (% of GDP)",
+      "short": "Health",
+      "category": "spending",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "Domestic general government spending on health (excludes external aid and private spending).",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "SH.XPD.GHED.GD.ZS",
+          "label": "WHO GHED via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/SH.XPD.GHED.GD.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/SH.XPD.GHED.GD.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://apps.who.int/nha/database/",
+        "https://data.imf.org/Datasets/GFS_COFOG"
+      ]
+    },
+    {
+      "id": "health_gov_per_capita",
+      "name": "Government health expenditure per person (current US$)",
+      "short": "Health per person",
+      "category": "spending",
+      "unit": "usd_per_capita",
+      "scale": "sequential",
+      "description": "Domestic general government health spending divided by population.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "SH.XPD.GHED.PC.CD",
+          "label": "WHO GHED via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/SH.XPD.GHED.PC.CD?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/SH.XPD.GHED.PC.CD"
+        }
+      ],
+      "find_newer_data": [
+        "https://apps.who.int/nha/database/"
+      ]
+    },
+    {
+      "id": "health_pct_gov",
+      "name": "Government health expenditure (% of government spending)",
+      "short": "Health / budget",
+      "category": "spending",
+      "unit": "percent",
+      "scale": "sequential",
+      "description": "Share of the government budget spent on health.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "SH.XPD.GHED.GE.ZS",
+          "label": "WHO GHED via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/SH.XPD.GHED.GE.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/SH.XPD.GHED.GE.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://apps.who.int/nha/database/"
+      ]
+    },
+    {
+      "id": "education_gdp",
+      "name": "Government education expenditure (% of GDP)",
+      "short": "Education",
+      "category": "spending",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "Public spending on education at all levels.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "SE.XPD.TOTL.GD.ZS",
+          "label": "UNESCO UIS via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/SE.XPD.TOTL.GD.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://databrowser.uis.unesco.org/",
+        "https://data.imf.org/Datasets/GFS_COFOG"
+      ]
+    },
+    {
+      "id": "education_pct_gov",
+      "name": "Government education expenditure (% of government spending)",
+      "short": "Education / budget",
+      "category": "spending",
+      "unit": "percent",
+      "scale": "sequential",
+      "description": "Share of the government budget spent on education.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "SE.XPD.TOTL.GB.ZS",
+          "label": "UNESCO UIS via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/SE.XPD.TOTL.GB.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/SE.XPD.TOTL.GB.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://databrowser.uis.unesco.org/"
+      ]
+    },
+    {
+      "id": "interest_gdp",
+      "name": "Government interest expense (% of GDP)",
+      "short": "Interest",
+      "category": "spending",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "Interest paid on government debt relative to GDP — money that funds no public service.",
+      "caveat": "Historical dataset; may lag the latest year.",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "ie",
+          "label": "IMF Public Finances in Modern History",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/ie",
+          "portal_url": "https://www.imf.org/external/datamapper/ie"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/en/Publications/FM",
+        "https://www.imf.org/external/datamapper/datasets/FPP",
+        "https://data.imf.org/"
+      ]
+    },
+    {
+      "id": "rnd_gdp",
+      "name": "Research & development expenditure (% of GDP)",
+      "short": "R&D",
+      "category": "spending",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "Gross domestic spending on R&D by government, business, universities and non-profits.",
+      "caveat": "Total R&D, not government-only.",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "GB.XPD.RSDV.GD.ZS",
+          "label": "UNESCO UIS via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/GB.XPD.RSDV.GD.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://databrowser.uis.unesco.org/",
+        "https://data-explorer.oecd.org/"
+      ]
+    },
+    {
+      "id": "central_gov_expense_gdp",
+      "name": "Central government expense (% of GDP)",
+      "short": "Central gov. expense",
+      "category": "spending",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "Cash payments for operating activities of central government (excludes capital spending).",
+      "caveat": "Central government only; coverage and recency vary.",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "GC.XPN.TOTL.GD.ZS",
+          "label": "World Bank WDI (IMF GFS)",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/GC.XPN.TOTL.GD.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/GC.XPN.TOTL.GD.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://data.imf.org/",
+        "https://www.imf.org/en/Publications/FM",
+        "https://www.worldbank.org/en/programs/boost-portal/country-data"
+      ]
+    },
+    {
+      "id": "wages_pct_expense",
+      "name": "Compensation of employees (% of expense)",
+      "short": "Public wages",
+      "category": "spending",
+      "unit": "percent",
+      "scale": "sequential",
+      "description": "Public-sector wage bill as a share of central government expense.",
+      "caveat": "Central government; coverage and recency vary.",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "GC.XPN.COMP.ZS",
+          "label": "World Bank WDI (IMF GFS)",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/GC.XPN.COMP.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/GC.XPN.COMP.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://data.imf.org/",
+        "https://www.worldbank.org/en/programs/boost-portal/country-data"
+      ]
+    },
+    {
+      "id": "subsidies_pct_expense",
+      "name": "Subsidies and other transfers (% of expense)",
+      "short": "Subsidies & transfers",
+      "category": "spending",
+      "unit": "percent",
+      "scale": "sequential",
+      "description": "Subsidies, grants and social benefits as a share of central government expense.",
+      "caveat": "Central government; coverage and recency vary.",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "GC.XPN.TRFT.ZS",
+          "label": "World Bank WDI (IMF GFS)",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/GC.XPN.TRFT.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/GC.XPN.TRFT.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://data.imf.org/",
+        "https://www.worldbank.org/en/programs/boost-portal/country-data",
+        "https://data.imf.org/Datasets/GFS_COFOG"
+      ]
+    },
+    {
+      "id": "gov_revenue_gdp",
+      "name": "General government revenue (% of GDP)",
+      "short": "Revenue",
+      "category": "revenue",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "Total revenue of general government (taxes, social contributions, grants, other).",
+      "caveat": "Historical dataset; may lag the latest year.",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "rev",
+          "label": "IMF Public Finances in Modern History",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/rev",
+          "portal_url": "https://www.imf.org/external/datamapper/rev"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/en/Publications/FM",
+        "https://www.ictd.ac/dataset/grd/",
+        "https://data-explorer.oecd.org/"
+      ]
+    },
+    {
+      "id": "tax_revenue_gdp",
+      "name": "Tax revenue (% of GDP)",
+      "short": "Tax revenue",
+      "category": "revenue",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "Compulsory transfers to central government for public purposes.",
+      "caveat": "Central government only.",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "GC.TAX.TOTL.GD.ZS",
+          "label": "World Bank WDI (IMF GFS)",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/GC.TAX.TOTL.GD.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/GC.TAX.TOTL.GD.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.ictd.ac/dataset/grd/",
+        "https://data-explorer.oecd.org/",
+        "https://data.imf.org/"
+      ]
+    },
+    {
+      "id": "gdp_usd",
+      "name": "GDP (current US$)",
+      "short": "GDP",
+      "category": "economy",
+      "unit": "usd",
+      "scale": "sequential",
+      "description": "Gross domestic product at current prices and market exchange rates.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "NGDPD",
+          "label": "IMF World Economic Outlook",
+          "multiplier": 1000000000.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/NGDPD",
+          "portal_url": "https://www.imf.org/external/datamapper/NGDPD"
+        },
+        {
+          "provider": "worldbank",
+          "code": "NY.GDP.MKTP.CD",
+          "label": "World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/en/Publications/WEO/weo-database",
+        "https://databank.worldbank.org/source/world-development-indicators",
+        "https://unstats.un.org/home/nso_sites/"
+      ]
+    },
+    {
+      "id": "gdp_per_capita",
+      "name": "GDP per capita (current US$)",
+      "short": "GDP per capita",
+      "category": "economy",
+      "unit": "usd_per_capita",
+      "scale": "sequential",
+      "description": "GDP divided by mid-year population.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "NGDPDPC",
+          "label": "IMF World Economic Outlook",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/NGDPDPC",
+          "portal_url": "https://www.imf.org/external/datamapper/NGDPDPC"
+        },
+        {
+          "provider": "worldbank",
+          "code": "NY.GDP.PCAP.CD",
+          "label": "World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/en/Publications/WEO/weo-database",
+        "https://databank.worldbank.org/source/world-development-indicators"
+      ]
+    },
+    {
+      "id": "gdp_growth",
+      "name": "Real GDP growth (annual %)",
+      "short": "GDP growth",
+      "category": "economy",
+      "unit": "percent",
+      "scale": "diverging",
+      "description": "Annual change in inflation-adjusted GDP.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "NGDP_RPCH",
+          "label": "IMF World Economic Outlook",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH",
+          "portal_url": "https://www.imf.org/external/datamapper/NGDP_RPCH"
+        },
+        {
+          "provider": "worldbank",
+          "code": "NY.GDP.MKTP.KD.ZG",
+          "label": "World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/en/Publications/WEO/weo-database",
+        "https://unstats.un.org/home/nso_sites/"
+      ]
+    },
+    {
+      "id": "inflation",
+      "name": "Inflation, consumer prices (annual %)",
+      "short": "Inflation",
+      "category": "economy",
+      "unit": "percent",
+      "scale": "sequential",
+      "description": "Annual average change in consumer prices.",
+      "caveat": "Hyperinflation outliers are capped in the colour scale but shown exactly in tooltips.",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "PCPIPCH",
+          "label": "IMF World Economic Outlook",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/PCPIPCH",
+          "portal_url": "https://www.imf.org/external/datamapper/PCPIPCH"
+        },
+        {
+          "provider": "worldbank",
+          "code": "FP.CPI.TOTL.ZG",
+          "label": "World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/en/Publications/WEO/weo-database",
+        "https://unstats.un.org/home/nso_sites/"
+      ]
+    },
+    {
+      "id": "unemployment",
+      "name": "Unemployment rate (%)",
+      "short": "Unemployment",
+      "category": "economy",
+      "unit": "percent",
+      "scale": "sequential",
+      "description": "Share of the labour force without work but available for and seeking employment.",
+      "caveat": "National definitions (IMF) and ILO-harmonised estimates (World Bank) can differ.",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "LUR",
+          "label": "IMF World Economic Outlook",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/LUR",
+          "portal_url": "https://www.imf.org/external/datamapper/LUR"
+        },
+        {
+          "provider": "worldbank",
+          "code": "SL.UEM.TOTL.ZS",
+          "label": "ILO modelled estimate via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://ilostat.ilo.org/data/",
+        "https://unstats.un.org/home/nso_sites/"
+      ]
+    },
+    {
+      "id": "current_account_gdp",
+      "name": "Current account balance (% of GDP)",
+      "short": "Current account",
+      "category": "economy",
+      "unit": "percent_of_gdp",
+      "scale": "diverging",
+      "description": "Trade, income and transfer balance with the rest of the world. Negative = deficit.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "BCA_NGDPD",
+          "label": "IMF World Economic Outlook",
+          "multiplier": 1.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/BCA_NGDPD",
+          "portal_url": "https://www.imf.org/external/datamapper/BCA_NGDPD"
+        },
+        {
+          "provider": "worldbank",
+          "code": "BN.CAB.XOKA.GD.ZS",
+          "label": "World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/BN.CAB.XOKA.GD.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/en/Publications/WEO/weo-database"
+      ]
+    },
+    {
+      "id": "fdi_inflows_gdp",
+      "name": "Foreign direct investment, net inflows (% of GDP)",
+      "short": "FDI inflows",
+      "category": "flows",
+      "unit": "percent_of_gdp",
+      "scale": "diverging",
+      "description": "Net new investment by foreign investors acquiring lasting management interest.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "BX.KLT.DINV.WD.GD.ZS",
+          "label": "World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/BX.KLT.DINV.WD.GD.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/BX.KLT.DINV.WD.GD.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://unctadstat.unctad.org/",
+        "https://databank.worldbank.org/source/world-development-indicators"
+      ]
+    },
+    {
+      "id": "remittances_gdp",
+      "name": "Personal remittances received (% of GDP)",
+      "short": "Remittances",
+      "category": "flows",
+      "unit": "percent_of_gdp",
+      "scale": "sequential",
+      "description": "Money sent home by migrant workers.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "BX.TRF.PWKR.DT.GD.ZS",
+          "label": "World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/BX.TRF.PWKR.DT.GD.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/BX.TRF.PWKR.DT.GD.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.knomad.org/data/remittances",
+        "https://databank.worldbank.org/source/world-development-indicators"
+      ]
+    },
+    {
+      "id": "oda_received_gni",
+      "name": "Net official development assistance received (% of GNI)",
+      "short": "Aid received",
+      "category": "flows",
+      "unit": "percent_of_gni",
+      "scale": "sequential",
+      "description": "Concessional loans and grants from official donors.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "DT.ODA.ODAT.GN.ZS",
+          "label": "OECD DAC via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/DT.ODA.ODAT.GN.ZS?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/DT.ODA.ODAT.GN.ZS"
+        }
+      ],
+      "find_newer_data": [
+        "https://data-explorer.oecd.org/",
+        "https://www.aiddata.org/data/aiddatas-global-chinese-development-finance-dataset-version-3-0"
+      ]
+    },
+    {
+      "id": "reserves_months",
+      "name": "Total reserves (months of imports)",
+      "short": "Reserves cover",
+      "category": "flows",
+      "unit": "months",
+      "scale": "sequential",
+      "description": "How many months of imports foreign-exchange reserves could pay for.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "FI.RES.TOTL.MO",
+          "label": "World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/FI.RES.TOTL.MO?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/FI.RES.TOTL.MO"
+        }
+      ],
+      "find_newer_data": [
+        "https://www.imf.org/en/Publications/WEO/weo-database",
+        "https://databank.worldbank.org/source/world-development-indicators"
+      ]
+    },
+    {
+      "id": "population",
+      "name": "Population",
+      "short": "Population",
+      "category": "people",
+      "unit": "people",
+      "scale": "sequential",
+      "description": "Mid-year resident population.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "imf",
+          "code": "LP",
+          "label": "IMF World Economic Outlook",
+          "multiplier": 1000000.0,
+          "api_url": "https://www.imf.org/external/datamapper/api/v1/LP",
+          "portal_url": "https://www.imf.org/external/datamapper/LP"
+        },
+        {
+          "provider": "worldbank",
+          "code": "SP.POP.TOTL",
+          "label": "World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+        }
+      ],
+      "find_newer_data": [
+        "https://population.un.org/wpp/",
+        "https://unstats.un.org/home/nso_sites/"
+      ]
+    },
+    {
+      "id": "life_expectancy",
+      "name": "Life expectancy at birth (years)",
+      "short": "Life expectancy",
+      "category": "people",
+      "unit": "years",
+      "scale": "sequential",
+      "description": "Years a newborn would live if current mortality patterns stayed the same.",
+      "caveat": "",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "SP.DYN.LE00.IN",
+          "label": "UN Population Division via World Bank WDI",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/SP.DYN.LE00.IN?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN"
+        }
+      ],
+      "find_newer_data": [
+        "https://population.un.org/wpp/"
+      ]
+    },
+    {
+      "id": "poverty_rate",
+      "name": "Extreme poverty headcount (% of population)",
+      "short": "Extreme poverty",
+      "category": "people",
+      "unit": "percent",
+      "scale": "sequential",
+      "description": "Share living below the international poverty line.",
+      "caveat": "Survey-based: years differ widely by country. The international line was revised in 2025.",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "SI.POV.DDAY",
+          "label": "World Bank Poverty & Inequality Platform",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/SI.POV.DDAY?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/SI.POV.DDAY"
+        }
+      ],
+      "find_newer_data": [
+        "https://pip.worldbank.org/"
+      ]
+    },
+    {
+      "id": "gini",
+      "name": "Gini index (income inequality)",
+      "short": "Inequality (Gini)",
+      "category": "people",
+      "unit": "index",
+      "scale": "sequential",
+      "description": "0 = perfect equality, 100 = one person has all income.",
+      "caveat": "Survey-based: years differ widely by country.",
+      "sources": [
+        {
+          "provider": "worldbank",
+          "code": "SI.POV.GINI",
+          "label": "World Bank Poverty & Inequality Platform",
+          "multiplier": 1.0,
+          "api_url": "https://api.worldbank.org/v2/country/all/indicator/SI.POV.GINI?format=json",
+          "portal_url": "https://data.worldbank.org/indicator/SI.POV.GINI"
+        }
+      ],
+      "find_newer_data": [
+        "https://pip.worldbank.org/"
+      ]
+    }
+  ],
+  "source_directory": [
+    {
+      "key": "wdi",
+      "name": "World Development Indicators",
+      "publisher": "World Bank",
+      "url": "https://databank.worldbank.org/source/world-development-indicators",
+      "topics": [
+        "economy",
+        "spending",
+        "people",
+        "flows"
+      ],
+      "access": "API + bulk download",
+      "updated": "Several times a year",
+      "note": ""
+    },
+    {
+      "key": "ids",
+      "name": "International Debt Statistics",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/en/programs/debt-statistics/ids",
+      "topics": [
+        "debt"
+      ],
+      "access": "API + bulk download",
+      "updated": "Annually (December)",
+      "note": "Debtor-by-creditor external debt for ~120 low- and middle-income countries."
+    },
+    {
+      "key": "imf_weo",
+      "name": "World Economic Outlook database",
+      "publisher": "IMF",
+      "url": "https://www.imf.org/en/Publications/WEO/weo-database",
+      "topics": [
+        "economy",
+        "debt"
+      ],
+      "access": "Download + DataMapper API",
+      "updated": "April and October",
+      "note": "Includes current-year estimates and five-year projections."
+    },
+    {
+      "key": "imf_datamapper",
+      "name": "IMF DataMapper",
+      "publisher": "IMF",
+      "url": "https://www.imf.org/external/datamapper/",
+      "topics": [
+        "economy",
+        "debt",
+        "spending",
+        "revenue"
+      ],
+      "access": "Open JSON API",
+      "updated": "With each WEO / Fiscal Monitor",
+      "note": ""
+    },
+    {
+      "key": "imf_fiscal_monitor",
+      "name": "Fiscal Monitor",
+      "publisher": "IMF",
+      "url": "https://www.imf.org/en/Publications/FM",
+      "topics": [
+        "debt",
+        "spending",
+        "revenue"
+      ],
+      "access": "Report + statistical tables",
+      "updated": "April and October",
+      "note": "Most current general government debt, deficit, revenue and spending estimates."
+    },
+    {
+      "key": "imf_gdd",
+      "name": "Global Debt Database",
+      "publisher": "IMF",
+      "url": "https://www.imf.org/external/datamapper/datasets/GDD",
+      "topics": [
+        "debt"
+      ],
+      "access": "DataMapper API",
+      "updated": "Annually",
+      "note": "Public and private debt back to 1950."
+    },
+    {
+      "key": "imf_fpp",
+      "name": "Public Finances in Modern History",
+      "publisher": "IMF",
+      "url": "https://www.imf.org/external/datamapper/datasets/FPP",
+      "topics": [
+        "spending",
+        "revenue"
+      ],
+      "access": "DataMapper API",
+      "updated": "Periodically",
+      "note": "Long-run revenue, spending and interest."
+    },
+    {
+      "key": "imf_gfs_cofog",
+      "name": "Government Expenditure by Function (COFOG)",
+      "publisher": "IMF Government Finance Statistics",
+      "url": "https://data.imf.org/Datasets/GFS_COFOG",
+      "topics": [
+        "spending"
+      ],
+      "access": "IMF data portal (SDMX API)",
+      "updated": "Annually",
+      "note": "The definitive 'where the money goes' breakdown: defence, health, education, social protection, public order, economic affairs, environment, housing, culture, general public services."
+    },
+    {
+      "key": "dbnomics_cofog",
+      "name": "IMF GFS COFOG mirror (DBnomics)",
+      "publisher": "DBnomics / Banque de France",
+      "url": "https://db.nomics.world/IMF/GFSCOFOG",
+      "topics": [
+        "spending"
+      ],
+      "access": "Free REST API, no key",
+      "updated": "Mirrors the IMF release",
+      "note": "Easiest programmatic access to COFOG; also mirrors Eurostat gov_10a_exp."
+    },
+    {
+      "key": "eurostat_cofog",
+      "name": "Government expenditure by function (gov_10a_exp)",
+      "publisher": "Eurostat",
+      "url": "https://db.nomics.world/Eurostat/gov_10a_exp",
+      "topics": [
+        "spending"
+      ],
+      "access": "API + download",
+      "updated": "Annually (February)",
+      "note": "Detailed COFOG for EU/EEA countries."
+    },
+    {
+      "key": "imf_gfs",
+      "name": "Government Finance Statistics",
+      "publisher": "IMF",
+      "url": "https://data.imf.org/",
+      "topics": [
+        "spending",
+        "revenue",
+        "debt"
+      ],
+      "access": "IMF data portal (SDMX API)",
+      "updated": "Annually",
+      "note": ""
+    },
+    {
+      "key": "imf_dsa",
+      "name": "Debt Sustainability Analyses (low-income countries)",
+      "publisher": "IMF / World Bank",
+      "url": "https://www.imf.org/external/pubs/ft/dsa/dsalist.pdf",
+      "topics": [
+        "debt"
+      ],
+      "access": "PDF list linking country reports",
+      "updated": "Monthly",
+      "note": "Risk of debt distress rating for every PRGT-eligible country."
+    },
+    {
+      "key": "imf_qeds",
+      "name": "Quarterly External Debt Statistics",
+      "publisher": "World Bank / IMF",
+      "url": "https://www.worldbank.org/en/programs/debt-statistics/qeds",
+      "topics": [
+        "debt"
+      ],
+      "access": "Download",
+      "updated": "Quarterly",
+      "note": "External debt for high-income economies not in IDS."
+    },
+    {
+      "key": "boost",
+      "name": "BOOST Open Budget Portal",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/en/programs/boost-portal/country-data",
+      "topics": [
+        "spending"
+      ],
+      "access": "Download",
+      "updated": "Varies by country",
+      "note": "Line-item budget execution data by ministry, program and region."
+    },
+    {
+      "key": "open_budget",
+      "name": "Open Budget Survey",
+      "publisher": "International Budget Partnership",
+      "url": "https://internationalbudget.org/open-budget-survey",
+      "topics": [
+        "spending",
+        "revenue"
+      ],
+      "access": "Download",
+      "updated": "Every two years",
+      "note": "Budget transparency scores and links to each government's budget documents."
+    },
+    {
+      "key": "sipri",
+      "name": "SIPRI Military Expenditure Database",
+      "publisher": "Stockholm International Peace Research Institute",
+      "url": "https://www.sipri.org/databases/milex",
+      "topics": [
+        "spending"
+      ],
+      "access": "Download (Excel)",
+      "updated": "Annually (April)",
+      "note": "Newer than the World Bank copy; includes US$ amounts and per-capita figures."
+    },
+    {
+      "key": "who_ghed",
+      "name": "Global Health Expenditure Database",
+      "publisher": "WHO",
+      "url": "https://apps.who.int/nha/database/",
+      "topics": [
+        "spending"
+      ],
+      "access": "Download",
+      "updated": "Annually (December)",
+      "note": ""
+    },
+    {
+      "key": "unesco_uis",
+      "name": "UIS Data Browser",
+      "publisher": "UNESCO Institute for Statistics",
+      "url": "https://databrowser.uis.unesco.org/",
+      "topics": [
+        "spending",
+        "people"
+      ],
+      "access": "API + download",
+      "updated": "Twice a year",
+      "note": ""
+    },
+    {
+      "key": "unu_wider_grd",
+      "name": "Government Revenue Dataset",
+      "publisher": "UNU-WIDER / ICTD",
+      "url": "https://www.ictd.ac/dataset/grd/",
+      "topics": [
+        "revenue"
+      ],
+      "access": "Download",
+      "updated": "Annually",
+      "note": "Harmonised tax and non-tax revenue for ~200 countries."
+    },
+    {
+      "key": "oecd",
+      "name": "OECD Data Explorer",
+      "publisher": "OECD",
+      "url": "https://data-explorer.oecd.org/",
+      "topics": [
+        "revenue",
+        "spending",
+        "flows",
+        "debt"
+      ],
+      "access": "SDMX API + download",
+      "updated": "Continuous",
+      "note": "Revenue Statistics, COFOG, aid (CRS) and government debt for OECD and partner countries."
+    },
+    {
+      "key": "bis",
+      "name": "Credit to the non-financial sector",
+      "publisher": "Bank for International Settlements",
+      "url": "https://data.bis.org/",
+      "topics": [
+        "debt"
+      ],
+      "access": "API + download",
+      "updated": "Quarterly",
+      "note": ""
+    },
+    {
+      "key": "aiddata",
+      "name": "Global Chinese Development Finance Dataset",
+      "publisher": "AidData",
+      "url": "https://www.aiddata.org/data/aiddatas-global-chinese-development-finance-dataset-version-3-0",
+      "topics": [
+        "debt",
+        "flows"
+      ],
+      "access": "Download",
+      "updated": "Periodic releases",
+      "note": "Project-level Chinese loans and grants."
+    },
+    {
+      "key": "bu_china",
+      "name": "Chinese Loans to Africa Database",
+      "publisher": "Boston University Global Development Policy Center",
+      "url": "https://www.bu.edu/gdp/chinese-loans-to-africa-database/",
+      "topics": [
+        "debt"
+      ],
+      "access": "Download",
+      "updated": "Annually",
+      "note": ""
+    },
+    {
+      "key": "unctad",
+      "name": "UNCTADstat",
+      "publisher": "UNCTAD",
+      "url": "https://unctadstat.unctad.org/",
+      "topics": [
+        "flows"
+      ],
+      "access": "Download",
+      "updated": "Annually",
+      "note": ""
+    },
+    {
+      "key": "knomad",
+      "name": "Remittances data",
+      "publisher": "KNOMAD / World Bank",
+      "url": "https://www.knomad.org/data/remittances",
+      "topics": [
+        "flows"
+      ],
+      "access": "Download",
+      "updated": "Twice a year",
+      "note": ""
+    },
+    {
+      "key": "ilostat",
+      "name": "ILOSTAT",
+      "publisher": "International Labour Organization",
+      "url": "https://ilostat.ilo.org/data/",
+      "topics": [
+        "economy"
+      ],
+      "access": "API + download",
+      "updated": "Continuous",
+      "note": ""
+    },
+    {
+      "key": "pip",
+      "name": "Poverty and Inequality Platform",
+      "publisher": "World Bank",
+      "url": "https://pip.worldbank.org/",
+      "topics": [
+        "people"
+      ],
+      "access": "API + download",
+      "updated": "Several times a year",
+      "note": ""
+    },
+    {
+      "key": "un_wpp",
+      "name": "World Population Prospects",
+      "publisher": "UN DESA Population Division",
+      "url": "https://population.un.org/wpp/",
+      "topics": [
+        "people"
+      ],
+      "access": "Download",
+      "updated": "Every two years",
+      "note": ""
+    },
+    {
+      "key": "owid",
+      "name": "Our World in Data",
+      "publisher": "Global Change Data Lab",
+      "url": "https://ourworldindata.org/government-spending",
+      "topics": [
+        "spending",
+        "debt",
+        "economy",
+        "people"
+      ],
+      "access": "Download + API",
+      "updated": "Continuous",
+      "note": "Long-run charts with documented sources; good for teaching."
+    },
+    {
+      "key": "dbnomics",
+      "name": "DBnomics",
+      "publisher": "Banque de France / CEPREMAP",
+      "url": "https://db.nomics.world/",
+      "topics": [
+        "debt",
+        "spending",
+        "revenue",
+        "economy",
+        "flows"
+      ],
+      "access": "Free REST API, no key",
+      "updated": "Continuous",
+      "note": "Aggregates IMF, World Bank, OECD, Eurostat, BIS and 80+ providers behind one API."
+    },
+    {
+      "key": "nso",
+      "name": "National statistics offices directory",
+      "publisher": "UN Statistics Division",
+      "url": "https://unstats.un.org/home/nso_sites/",
+      "topics": [
+        "economy",
+        "debt",
+        "spending",
+        "people"
+      ],
+      "access": "Portal",
+      "updated": "Varies",
+      "note": "Usually the most recent official figures, before international databases update."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# Dashboard
+streamlit>=1.50,<2.0
+pandas>=2.2,<4.0
+plotly>=5.24,<7.0
+
+# World Bank data ingestion and country lookup
+requests>=2.32,<3.0
+pycountry>=24.6
+
+# Interactive country map and true border-clipped geometry
+folium>=0.18,<1.0
+streamlit-folium>=0.25,<1.0
+shapely>=2.0,<3.0
+pyproj>=3.6,<4.0

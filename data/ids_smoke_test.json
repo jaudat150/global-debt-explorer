@@ -1,0 +1,3905 @@
+{
+  "metadata": {
+    "project": "Global Bilateral Debt Explorer",
+    "source_name": "World Bank International Debt Statistics",
+    "source_id": 6,
+    "indicator_code": "DT.DOD.BLAT.CD",
+    "indicator_name": "PPG, bilateral (DOD, current US$)",
+    "unit": "current US dollars",
+    "generated_at_utc": "2026-10-30T15:37:50+00:00",
+    "status": "success",
+    "latest_year": 2024,
+    "earliest_year": 2000,
+    "debtor_count": 1,
+    "creditor_count": 29,
+    "record_count": 431,
+    "requested_debtor_count": 1,
+    "failed_debtors": [],
+    "download_method": "World Bank IDS four-dimensional API; semicolon-delimited counterpart-area codes, 50-code batches, adaptive HTTP-400/404 splitting, time/all query with local year filtering, and pagination",
+    "observed_creditor_area_count": 29,
+    "requested_start_year": 2000,
+    "api_url_template": "https://api.worldbank.org/v2/sources/6/country/{debtor}/series/DT.DOD.BLAT.CD/counterpart-area/{creditor_code_1;creditor_code_2;...}/time/all",
+    "api_reference": "https://worldbank.github.io/debt-data/creditor-composition/creditor-data-python.html"
+  },
+  "records": [
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "087",
+      "creditor_iso3": "RUS",
+      "creditor_name": "Russian Federation",
+      "amount_usd": 1000000000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 354168000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 273910000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 123543084.2
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 99279509.9
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 92160810.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 77451515.9
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "338",
+      "creditor_iso3": "CUB",
+      "creditor_name": "Cuba",
+      "amount_usd": 67097000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 61701000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "003",
+      "creditor_iso3": "DNK",
+      "creditor_name": "Denmark",
+      "amount_usd": 47585044.7
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 45909000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 42313000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "005",
+      "creditor_iso3": "DEU",
+      "creditor_name": "Germany, Fed. Rep. of",
+      "amount_usd": 34934000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "001",
+      "creditor_iso3": "AUT",
+      "creditor_name": "Austria",
+      "amount_usd": 23548371.5
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 11770783.8
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "552",
+      "creditor_iso3": "KWT",
+      "creditor_name": "Kuwait",
+      "amount_usd": 6712110.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 3255000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "075",
+      "creditor_iso3": "HUN",
+      "creditor_name": "Hungary",
+      "amount_usd": 2356000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "072",
+      "creditor_iso3": "BGR",
+      "creditor_name": "Bulgaria",
+      "amount_usd": 1351000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "068",
+      "creditor_iso3": "CZE",
+      "creditor_name": "Czechia",
+      "amount_usd": 919000.0
+    },
+    {
+      "year": 2000,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 356574000.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 273910000.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 122166961.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 94030119.9
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 90107042.1
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 73356281.8
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 61701000.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "338",
+      "creditor_iso3": "CUB",
+      "creditor_name": "Cuba",
+      "amount_usd": 60190000.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "003",
+      "creditor_iso3": "DNK",
+      "creditor_name": "Denmark",
+      "amount_usd": 45737956.5
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 41434000.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "005",
+      "creditor_iso3": "DEU",
+      "creditor_name": "Germany, Fed. Rep. of",
+      "amount_usd": 34934000.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 23633000.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "001",
+      "creditor_iso3": "AUT",
+      "creditor_name": "Austria",
+      "amount_usd": 22303257.3
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 11148409.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "552",
+      "creditor_iso3": "KWT",
+      "creditor_name": "Kuwait",
+      "amount_usd": 6073947.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 3255000.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "075",
+      "creditor_iso3": "HUN",
+      "creditor_name": "Hungary",
+      "amount_usd": 2356000.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "072",
+      "creditor_iso3": "BGR",
+      "creditor_name": "Bulgaria",
+      "amount_usd": 1128000.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "068",
+      "creditor_iso3": "CZE",
+      "creditor_name": "Czechia",
+      "amount_usd": 919000.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "087",
+      "creditor_iso3": "RUS",
+      "creditor_name": "Russian Federation",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2001,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 556727000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 473910000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 126849139.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 111890832.4
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 93977583.5
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 87186798.4
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 54101000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "003",
+      "creditor_iso3": "DNK",
+      "creditor_name": "Denmark",
+      "amount_usd": 52476874.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "338",
+      "creditor_iso3": "CUB",
+      "creditor_name": "Cuba",
+      "amount_usd": 51667000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 40253000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "005",
+      "creditor_iso3": "DEU",
+      "creditor_name": "Germany, Fed. Rep. of",
+      "amount_usd": 34934000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "001",
+      "creditor_iso3": "AUT",
+      "creditor_name": "Austria",
+      "amount_usd": 26539685.8
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 13266007.9
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 9500000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "552",
+      "creditor_iso3": "KWT",
+      "creditor_name": "Kuwait",
+      "amount_usd": 6242434.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 3255000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "075",
+      "creditor_iso3": "HUN",
+      "creditor_name": "Hungary",
+      "amount_usd": 2356000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 1356000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "072",
+      "creditor_iso3": "BGR",
+      "creditor_name": "Bulgaria",
+      "amount_usd": 914000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "068",
+      "creditor_iso3": "CZE",
+      "creditor_name": "Czechia",
+      "amount_usd": 133000.0
+    },
+    {
+      "year": 2002,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "087",
+      "creditor_iso3": "RUS",
+      "creditor_name": "Russian Federation",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 561113000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 473910000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 137398570.7
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "005",
+      "creditor_iso3": "DEU",
+      "creditor_name": "Germany, Fed. Rep. of",
+      "amount_usd": 135934000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 109940909.7
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 102052946.2
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 85993110.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 61240000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "003",
+      "creditor_iso3": "DNK",
+      "creditor_name": "Denmark",
+      "amount_usd": 60887565.1
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 54101000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "338",
+      "creditor_iso3": "CUB",
+      "creditor_name": "Cuba",
+      "amount_usd": 51667000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 40253000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "001",
+      "creditor_iso3": "AUT",
+      "creditor_name": "Austria",
+      "amount_usd": 31963024.6
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 15976894.5
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 9500000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "552",
+      "creditor_iso3": "KWT",
+      "creditor_name": "Kuwait",
+      "amount_usd": 6345433.6
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 3255000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "075",
+      "creditor_iso3": "HUN",
+      "creditor_name": "Hungary",
+      "amount_usd": 2356000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "072",
+      "creditor_iso3": "BGR",
+      "creditor_name": "Bulgaria",
+      "amount_usd": 914000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "068",
+      "creditor_iso3": "CZE",
+      "creditor_name": "Czechia",
+      "amount_usd": 133000.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "087",
+      "creditor_iso3": "RUS",
+      "creditor_name": "Russian Federation",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2003,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 700754544.1
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 567461332.2
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 383414147.3
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 226118684.6
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 222507000.7
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 202197000.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 193858158.3
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 81011000.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 77004805.3
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "010",
+      "creditor_iso3": "SWE",
+      "creditor_name": "Sweden",
+      "amount_usd": 61334980.6
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 56501000.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "001",
+      "creditor_iso3": "AUT",
+      "creditor_name": "Austria",
+      "amount_usd": 34946037.6
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "005",
+      "creditor_iso3": "DEU",
+      "creditor_name": "Germany, Fed. Rep. of",
+      "amount_usd": 34000000.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 30620000.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "003",
+      "creditor_iso3": "DNK",
+      "creditor_name": "Denmark",
+      "amount_usd": 27528434.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 9500000.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "077",
+      "creditor_iso3": "ROU",
+      "creditor_name": "Romania",
+      "amount_usd": 8889000.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 8430000.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "552",
+      "creditor_iso3": "KWT",
+      "creditor_name": "Kuwait",
+      "amount_usd": 4845632.4
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 3254000.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "008",
+      "creditor_iso3": "NOR",
+      "creditor_name": "Norway",
+      "amount_usd": 1682947.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "068",
+      "creditor_iso3": "CZE",
+      "creditor_name": "Czechia",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "072",
+      "creditor_iso3": "BGR",
+      "creditor_name": "Bulgaria",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "075",
+      "creditor_iso3": "HUN",
+      "creditor_name": "Hungary",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "087",
+      "creditor_iso3": "RUS",
+      "creditor_name": "Russian Federation",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "338",
+      "creditor_iso3": "CUB",
+      "creditor_name": "Cuba",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2004,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 699996340.6
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 464831588.7
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 331280416.1
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 254265000.0
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 229104861.6
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 197167062.2
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 182010000.0
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 167898443.1
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 61239448.6
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "010",
+      "creditor_iso3": "SWE",
+      "creditor_name": "Sweden",
+      "amount_usd": 55816866.7
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 49822000.0
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "001",
+      "creditor_iso3": "AUT",
+      "creditor_name": "Austria",
+      "amount_usd": 30266383.2
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "003",
+      "creditor_iso3": "DNK",
+      "creditor_name": "Denmark",
+      "amount_usd": 23113425.2
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 16982000.0
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 15310000.0
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 9500000.0
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "077",
+      "creditor_iso3": "ROU",
+      "creditor_name": "Romania",
+      "amount_usd": 8889000.0
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 8430000.0
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "552",
+      "creditor_iso3": "KWT",
+      "creditor_name": "Kuwait",
+      "amount_usd": 4202057.8
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 3254000.0
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "008",
+      "creditor_iso3": "NOR",
+      "creditor_name": "Norway",
+      "amount_usd": 1501477.1
+    },
+    {
+      "year": 2005,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "005",
+      "creditor_iso3": "DEU",
+      "creditor_name": "Germany, Fed. Rep. of",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 698819000.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 556493000.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 297809000.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 166727708.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 148338000.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 90163137.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 44998593.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 43318000.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "010",
+      "creditor_iso3": "SWE",
+      "creditor_name": "Sweden",
+      "amount_usd": 34696168.9
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "003",
+      "creditor_iso3": "DNK",
+      "creditor_name": "Denmark",
+      "amount_usd": 24444278.1
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 16683000.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 10516000.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "077",
+      "creditor_iso3": "ROU",
+      "creditor_name": "Romania",
+      "amount_usd": 8889000.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "552",
+      "creditor_iso3": "KWT",
+      "creditor_name": "Kuwait",
+      "amount_usd": 4243579.5
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 1496791.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "001",
+      "creditor_iso3": "AUT",
+      "creditor_name": "Austria",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "008",
+      "creditor_iso3": "NOR",
+      "creditor_name": "Norway",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2006,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 1074852000.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 715640000.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 526541000.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 136727000.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 52717321.8
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 36000205.5
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 35610000.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 35523000.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 23954380.3
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 16738000.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 15125000.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "077",
+      "creditor_iso3": "ROU",
+      "creditor_name": "Romania",
+      "amount_usd": 8889000.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "552",
+      "creditor_iso3": "KWT",
+      "creditor_name": "Kuwait",
+      "amount_usd": 2798532.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 1511213.8
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "003",
+      "creditor_iso3": "DNK",
+      "creditor_name": "Denmark",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2007,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "010",
+      "creditor_iso3": "SWE",
+      "creditor_name": "Sweden",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 1438256000.0
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 971527000.0
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 701640000.0
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 124382000.0
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 47283803.4
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 43169000.0
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 33650000.0
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 33140000.0
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 27995437.2
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 20591000.0
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 14352602.1
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 1312061.2
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "077",
+      "creditor_iso3": "ROU",
+      "creditor_name": "Romania",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2008,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "552",
+      "creditor_iso3": "KWT",
+      "creditor_name": "Kuwait",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 1648271000.0
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 1573891000.0
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 670226000.0
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 111072000.0
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 70777000.0
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 45082312.6
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 31689000.0
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 30842000.0
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 25455402.0
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 24280000.0
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 12112564.8
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2009,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 1369303.0
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 1746103000.0
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 1559148000.0
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 642311000.0
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 104468000.0
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 102034000.0
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 32752000.0
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 29727000.0
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 26803401.2
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 26756000.0
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 20159249.4
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 2199385.2
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 1350187.0
+    },
+    {
+      "year": 2010,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 1895845000.0
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 1463243000.0
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 614397000.0
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 118364000.0
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 91790000.0
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 39462168.9
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 34585000.0
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 31212000.0
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 27767000.0
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 21762104.1
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 16520515.2
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 1755822.3
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 1332496.7
+    },
+    {
+      "year": 2011,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "087",
+      "creditor_iso3": "RUS",
+      "creditor_name": "Russian Federation",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 2295998000.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 1600053000.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 586483000.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 163188908.1
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 122129000.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 83843000.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 55586000.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 28597000.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 25807000.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 22152726.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 14046332.4
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 1790425.8
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 1343566.0
+    },
+    {
+      "year": 2012,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "087",
+      "creditor_iso3": "RUS",
+      "creditor_name": "Russian Federation",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 2291798000.0
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 2124269000.0
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 558568000.0
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 462620000.0
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 155071225.1
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 129318000.0
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 75889000.0
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 68503015.3
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 53005000.0
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 23847000.0
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 23155089.0
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 11759585.7
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 1412198.4
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 1367439.6
+    },
+    {
+      "year": 2013,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "087",
+      "creditor_iso3": "RUS",
+      "creditor_name": "Russian Federation",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 2304106000.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 2292521000.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 700000000.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 631822127.3
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 530654000.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 138665000.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 74574701.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 67942000.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 50425000.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 22229000.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 20384739.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 8576402.4
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 1337597.6
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 1041697.8
+    },
+    {
+      "year": 2014,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "087",
+      "creditor_iso3": "RUS",
+      "creditor_name": "Russian Federation",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 2581684000.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 1954303000.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 939776556.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 700000000.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 502739000.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 149358000.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 80906942.2
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 61101000.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 47844000.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 20269000.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 18279273.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 6339500.1
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 1310219.3
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 754469.1
+    },
+    {
+      "year": 2015,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "087",
+      "creditor_iso3": "RUS",
+      "creditor_name": "Russian Federation",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 3304503000.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 1309257000.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 900409328.8
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 612500000.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 474825000.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 183390000.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 156941000.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 81156713.9
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 58398000.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 54958000.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 18569000.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 17698339.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 4803533.7
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 1222879.4
+    },
+    {
+      "year": 2016,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 562889.4
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 3503446000.0
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 1018395476.2
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 849192754.7
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 525000000.0
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 446842000.0
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 304955000.0
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 154698000.0
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 84794893.6
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 54161000.0
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 49189407.3
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 20136247.0
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 16870571.4
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 4860762.9
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 450936.8
+    },
+    {
+      "year": 2017,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "012",
+      "creditor_iso3": "GBR",
+      "creditor_name": "United Kingdom",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 5023633000.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 795434666.7
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 767018346.2
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 512500000.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 418928000.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 290810000.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 173903000.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 78235540.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 43269000.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 43237000.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 19224550.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 14828000.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 4088795.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 248465.0
+    },
+    {
+      "year": 2018,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 4577959000.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 685156868.1
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 417478000.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 391014000.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 346146000.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 176881000.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 72664721.8
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 37595000.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 36402000.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 18861886.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 13130000.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 11896806.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 3467935.8
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 66280.6
+    },
+    {
+      "year": 2019,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "431",
+      "creditor_iso3": "BRA",
+      "creditor_name": "Brazil",
+      "amount_usd": 0.0
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 4625869000.0
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 682723316.5
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 397339808.4
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 363099000.0
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 344365000.0
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 246388000.0
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 74259104.2
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 34620000.0
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 29535000.0
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 20603009.0
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 13277222.0
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 12831000.0
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 3788057.7
+    },
+    {
+      "year": 2020,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 76080.2
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 4569259000.0
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 621044183.2
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 390436823.2
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 363099000.0
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 325491000.0
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 243287000.0
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 66257540.2
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 34964000.0
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 22670000.0
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 19052597.2
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 13775813.8
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 13049000.0
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 3728519.2
+    },
+    {
+      "year": 2021,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 70221.2
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 4039806000.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 521666619.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 324613000.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 307270000.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 303458033.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 231249000.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 86902301.6
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 59972283.2
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 28647000.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 17081599.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 15803000.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 10858000.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 2847822.0
+    },
+    {
+      "year": 2022,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 43730.6
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 3250803000.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 390252756.7
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 280172000.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 279356000.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 221727000.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 217788025.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 107597165.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 59001085.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 21733000.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 16803735.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 8952000.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 8161000.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 2369120.0
+    },
+    {
+      "year": 2023,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 22100.0
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "730",
+      "creditor_iso3": "CHN",
+      "creditor_name": "China",
+      "amount_usd": 2596005403.6
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "701",
+      "creditor_iso3": "JPN",
+      "creditor_name": "Japan",
+      "amount_usd": 265015376.9
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "009",
+      "creditor_iso3": "PRT",
+      "creditor_name": "Portugal",
+      "amount_usd": 251441000.0
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "004",
+      "creditor_iso3": "FRA",
+      "creditor_name": "France",
+      "amount_usd": 249162503.7
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "301",
+      "creditor_iso3": "CAN",
+      "creditor_name": "Canada",
+      "amount_usd": 244115000.0
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "742",
+      "creditor_iso3": "KOR",
+      "creditor_name": "Korea, Republic of",
+      "amount_usd": 212779000.0
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "216",
+      "creditor_iso3": "ZAF",
+      "creditor_name": "South Africa",
+      "amount_usd": 197355626.2
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "076",
+      "creditor_iso3": "POL",
+      "creditor_name": "Poland",
+      "amount_usd": 53583677.8
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "050",
+      "creditor_iso3": "ESP",
+      "creditor_name": "Spain",
+      "amount_usd": 15175000.0
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "006",
+      "creditor_iso3": "ITA",
+      "creditor_name": "Italy",
+      "amount_usd": 14961198.9
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "060",
+      "creditor_iso3": "SRB",
+      "creditor_name": "Serbia",
+      "amount_usd": 7546000.0
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "302",
+      "creditor_iso3": "USA",
+      "creditor_name": "United States",
+      "amount_usd": 5467000.0
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "646",
+      "creditor_iso3": "IND",
+      "creditor_name": "India",
+      "amount_usd": 2500000.0
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "007",
+      "creditor_iso3": "NLD",
+      "creditor_name": "Netherlands",
+      "amount_usd": 1684056.9
+    },
+    {
+      "year": 2024,
+      "debtor_iso3": "AGO",
+      "debtor_name": "Angola",
+      "creditor_id": "002",
+      "creditor_iso3": "BEL",
+      "creditor_name": "Belgium",
+      "amount_usd": 0.0
+    }
+  ]
+}

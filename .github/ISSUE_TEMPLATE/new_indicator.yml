@@ -1,0 +1,20 @@
+name: New indicator or data source
+description: Propose something new to map, or a better place to find data.
+labels: [enhancement, data-source]
+body:
+  - type: input
+    id: what
+    attributes: {label: "What should be added?", placeholder: "e.g. Social protection spending (% of GDP)"}
+    validations: {required: true}
+  - type: input
+    id: source
+    attributes: {label: "Source and series code (link)", placeholder: "https://data.worldbank.org/indicator/..."}
+    validations: {required: true}
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [Debt & deficits, Government spending, Revenue & taxes, Economy, External finance, People & development, Other]
+  - type: textarea
+    id: why
+    attributes: {label: "Why is it useful? Who would use it?"}

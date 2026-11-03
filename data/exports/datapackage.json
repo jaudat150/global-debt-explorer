@@ -1,0 +1,407 @@
+{
+  "name": "global-debt-fiscal-atlas",
+  "title": "Global Debt & Fiscal Atlas — open data export",
+  "description": "Sovereign debt, deficits, government spending, revenue, macro and development indicators for every country, plus bilateral who-owes-whom debt, with full provenance.",
+  "version": "3.3.1",
+  "created": "2026-11-02T20:35:58+00:00",
+  "homepage": "https://github.com/Jaudat150/global-debt-explorer",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Data: see each provider's terms (World Bank CC BY 4.0, IMF terms, SIPRI, WHO, UNESCO)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "World Bank Indicators API",
+      "path": "https://api.worldbank.org/v2/"
+    },
+    {
+      "title": "IMF DataMapper API",
+      "path": "https://www.imf.org/external/datamapper/api/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Jaudat Faisal Al-Husein",
+      "role": "author"
+    }
+  ],
+  "resources": [
+    {
+      "name": "countries",
+      "path": "countries.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Country reference: ISO codes, names and map coordinates.",
+      "rows": 250,
+      "schema": {
+        "fields": [
+          {
+            "name": "iso3",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-3 country code (XKX = Kosovo)"
+          },
+          {
+            "name": "iso2",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Country name"
+          },
+          {
+            "name": "latitude",
+            "type": "number",
+            "description": "Label point latitude (Natural Earth)"
+          },
+          {
+            "name": "longitude",
+            "type": "number",
+            "description": "Label point longitude (Natural Earth)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest_values",
+      "path": "latest_values.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Latest value of every indicator for every country, with provenance.",
+      "rows": 6350,
+      "schema": {
+        "fields": [
+          {
+            "name": "iso3",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-3 country code (XKX = Kosovo)"
+          },
+          {
+            "name": "indicator_id",
+            "type": "string",
+            "description": "Indicator id (see catalog.json)"
+          },
+          {
+            "name": "indicator",
+            "type": "string",
+            "description": "Indicator name"
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "description": "Observed value in the indicator's unit"
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "description": "Unit of the value"
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "Observation year"
+          },
+          {
+            "name": "is_estimate",
+            "type": "boolean",
+            "description": "True when the value is an IMF current-year staff estimate"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Publisher / dataset"
+          },
+          {
+            "name": "series_code",
+            "type": "string",
+            "description": "Upstream series code"
+          },
+          {
+            "name": "series_url",
+            "type": "string",
+            "description": "Human-readable page for the series"
+          },
+          {
+            "name": "from_snapshot",
+            "type": "boolean",
+            "description": "True when taken from the last saved copy because the API was unreachable"
+          },
+          {
+            "name": "retrieved_at_utc",
+            "type": "string",
+            "description": "When the value was retrieved (UTC)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "timeseries",
+      "path": "timeseries.csv.gz",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Every year of every upstream series (one row per source; nothing merged or filled).",
+      "rows": 189115,
+      "schema": {
+        "fields": [
+          {
+            "name": "iso3",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-3 country code (XKX = Kosovo)"
+          },
+          {
+            "name": "indicator_id",
+            "type": "string",
+            "description": "Indicator id (see catalog.json)"
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "Observation year"
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "description": "Observed value in the indicator's unit"
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "description": "Unit of the value"
+          },
+          {
+            "name": "provider",
+            "type": "string",
+            "description": "worldbank or imf"
+          },
+          {
+            "name": "series_code",
+            "type": "string",
+            "description": "Upstream series code"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Publisher / dataset"
+          },
+          {
+            "name": "from_snapshot",
+            "type": "boolean",
+            "description": "True when taken from the last saved copy because the API was unreachable"
+          }
+        ]
+      },
+      "compression": "gz"
+    },
+    {
+      "name": "spending_usd",
+      "path": "spending_usd.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Where each country spends its money, in current US$, with method and sources.",
+      "rows": 1310,
+      "schema": {
+        "fields": [
+          {
+            "name": "iso3",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-3 country code (XKX = Kosovo)"
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country name"
+          },
+          {
+            "name": "item_id",
+            "type": "string",
+            "description": "Spending line id"
+          },
+          {
+            "name": "item",
+            "type": "string",
+            "description": "Spending line"
+          },
+          {
+            "name": "scope",
+            "type": "string",
+            "description": "Government scope of the line"
+          },
+          {
+            "name": "usd",
+            "type": "number",
+            "description": "Amount in current US$"
+          },
+          {
+            "name": "pct_gdp",
+            "type": "number",
+            "description": "Amount as % of GDP"
+          },
+          {
+            "name": "usd_per_person",
+            "type": "number",
+            "description": "Amount per person, current US$"
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "Observation year"
+          },
+          {
+            "name": "method",
+            "type": "string",
+            "description": "How the US$ amount was obtained"
+          },
+          {
+            "name": "sources",
+            "type": "string",
+            "description": "Series used for every factor"
+          }
+        ]
+      }
+    },
+    {
+      "name": "national_debt_profiles",
+      "path": "national_debt_profiles.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "3-tier national debt profile for every country (World Bank → IMF → local).",
+      "rows": 250,
+      "schema": {
+        "fields": [
+          {
+            "name": "iso3",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-3 country code (XKX = Kosovo)"
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country name"
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "description": "Observed value in the indicator's unit"
+          },
+          {
+            "name": "display_value",
+            "type": "string",
+            "description": "Formatted value"
+          },
+          {
+            "name": "metric_type",
+            "type": "string",
+            "description": "Machine-readable metric type"
+          },
+          {
+            "name": "metric_label",
+            "type": "string",
+            "description": "Metric definition"
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "description": "Unit of the value"
+          },
+          {
+            "name": "observation_year",
+            "type": "number",
+            "description": "Observation year"
+          },
+          {
+            "name": "fallback_tier",
+            "type": "number",
+            "description": "1 = World Bank, 2 = IMF, 3 = local fallback, blank = no data"
+          },
+          {
+            "name": "source_label",
+            "type": "string",
+            "description": "Source"
+          },
+          {
+            "name": "source_url",
+            "type": "string",
+            "description": "Source link"
+          },
+          {
+            "name": "source_date_label",
+            "type": "string",
+            "description": "Source publication or retrieval date"
+          },
+          {
+            "name": "is_estimate_profile",
+            "type": "boolean",
+            "description": "True for curated estimates"
+          },
+          {
+            "name": "data_available",
+            "type": "boolean",
+            "description": "False when no tier had a value (not zero)"
+          },
+          {
+            "name": "definition_note",
+            "type": "string",
+            "description": "Definition and caveats"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bilateral_debt",
+      "path": "bilateral_debt.csv.gz",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Who owes whom: World Bank IDS bilateral PPG debt by debtor, creditor and year.",
+      "rows": 35576,
+      "schema": {
+        "fields": [
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "Observation year"
+          },
+          {
+            "name": "debtor_iso3",
+            "type": "string",
+            "description": "Borrowing country ISO3"
+          },
+          {
+            "name": "debtor_name",
+            "type": "string",
+            "description": "Borrowing country"
+          },
+          {
+            "name": "creditor_id",
+            "type": "string",
+            "description": "World Bank IDS counterpart-area code"
+          },
+          {
+            "name": "creditor_iso3",
+            "type": "string",
+            "description": "Lending country ISO3 (blank for non-sovereign creditor areas)"
+          },
+          {
+            "name": "creditor_name",
+            "type": "string",
+            "description": "Lender"
+          },
+          {
+            "name": "amount_usd",
+            "type": "number",
+            "description": "Public and publicly guaranteed bilateral debt outstanding, current US$"
+          }
+        ]
+      },
+      "compression": "gz"
+    }
+  ]
+}

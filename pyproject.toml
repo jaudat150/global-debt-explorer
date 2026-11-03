@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "debt-atlas"
+dynamic = ["version"]
+description = "Sovereign debt, deficits, government spending and who-owes-whom data for every country — World Bank and IMF, with provenance."
+readme = "docs/LIBRARY.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Jaudat Faisal Al-Husein", email = "jaudatalhusein@gmail.com" }]
+keywords = ["sovereign debt", "public debt", "government spending", "military spending", "world bank", "imf",
+            "open data", "public finance", "economics", "fiscal", "bilateral debt", "china lending"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Education",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+  "Topic :: Office/Business :: Financial",
+]
+dependencies = ["pandas>=1.5"]
+
+[project.urls]
+Homepage = "https://jaudat150.github.io/global-debt-explorer/"
+Source = "https://github.com/Jaudat150/global-debt-explorer"
+Documentation = "https://github.com/Jaudat150/global-debt-explorer/blob/main/docs/LIBRARY.md"
+Issues = "https://github.com/Jaudat150/global-debt-explorer/issues"
+Changelog = "https://github.com/Jaudat150/global-debt-explorer/blob/main/CHANGELOG.md"
+
+[project.scripts]
+debt-atlas = "debt_atlas.cli:main"
+
+[tool.setuptools]
+packages = ["debt_atlas"]
+
+[tool.setuptools.dynamic]
+version = { attr = "debt_atlas._meta.__version__" }

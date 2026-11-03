@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software or its data exports, please cite it as below, and cite the original data providers listed with every value."
+title: "Global Debt & Fiscal Atlas"
+abstract: >-
+  An open-source, browser-based atlas of sovereign debt, deficits, government
+  spending, revenue, macroeconomic and development indicators for every
+  country, with bilateral debtor-to-creditor relationships from World Bank
+  International Debt Statistics. Data are retrieved live from the World Bank
+  and IMF APIs with explicit provenance, freshness and a resilient fallback.
+type: software
+authors:
+  - family-names: "Al-Husein"
+    given-names: "Jaudat Faisal"
+version: 3.4.0
+date-released: 2026-11-02
+license: MIT
+repository-code: "https://github.com/Jaudat150/global-debt-explorer"
+keywords:
+  - sovereign debt
+  - public finance
+  - government spending
+  - fiscal policy
+  - open data
+  - World Bank
+  - IMF
+  - Streamlit
+  - data visualization

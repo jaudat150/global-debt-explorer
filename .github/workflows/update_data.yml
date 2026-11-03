@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: refresh-global-bilateral-debt
@@ -44,8 +45,20 @@ jobs:
         env:
           LOG_LEVEL: WARNING
 
-      - name: Commit updated data
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Open a pull request with the refreshed data
+        # main is protected by the "protect main" ruleset, so the bot proposes a PR
+        # instead of pushing. A repository admin merges it (bypass) to publish.
+        uses: peter-evans/create-pull-request@v7
         with:
-          commit_message: "chore(data): refresh World Bank IDS cache and country-profile snapshot"
-          file_pattern: data/bilateral_debt_cache.json data/country_profiles_snapshot.json
+          branch: data/ids-refresh
+          delete-branch: true
+          commit-message: "chore(data): refresh World Bank IDS cache and country-profile snapshot"
+          title: "chore(data): monthly World Bank IDS refresh"
+          body: |
+            Automated monthly refresh of the World Bank IDS creditor cache and the
+            country-profile snapshot, opened by the "Refresh World Bank IDS debt data" workflow.
+            Merge to publish; the website rebuilds on the next push to main.
+          labels: data
+          add-paths: |
+            data/bilateral_debt_cache.json
+            data/country_profiles_snapshot.json

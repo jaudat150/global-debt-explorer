@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: refresh-atlas-snapshot
@@ -34,7 +35,21 @@ jobs:
         run: python -m src.exports build
       - name: Validate exports (coverage, reference figures, consistency)
         run: python -m src.validate --out data/exports/VALIDATION.md
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Open a pull request with the refreshed data
+        # main is protected by the "protect main" ruleset, so the bot proposes a PR
+        # instead of pushing. A repository admin merges it (bypass) to publish.
+        uses: peter-evans/create-pull-request@v7
         with:
-          commit_message: "chore(data): weekly atlas snapshot and open-data exports"
-          file_pattern: data/indicator_snapshot.json data/country_profiles_snapshot.json data/exports/*
+          branch: data/weekly-snapshot
+          delete-branch: true
+          commit-message: "chore(data): weekly atlas snapshot and open-data exports"
+          title: "chore(data): weekly atlas snapshot and open-data exports"
+          body: |
+            Automated weekly refresh opened by the "Refresh atlas data snapshot" workflow.
+            See data/exports/VALIDATION.md in the diff for coverage and consistency checks.
+            Merge to publish; the website rebuilds on the next push to main.
+          labels: data
+          add-paths: |
+            data/indicator_snapshot.json
+            data/country_profiles_snapshot.json
+            data/exports/*

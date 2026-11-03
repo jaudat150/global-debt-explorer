@@ -1,0 +1,3 @@
+# Shows the "Sponsor" button on the repository page.
+# When the Patreon page is live, add:  patreon: <your-patreon-name>
+custom: ["https://jaudat150.github.io/global-debt-explorer/support/"]

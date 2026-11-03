@@ -8,6 +8,7 @@ module writes plain HTML pages that load instantly and rank well:
                              who it owes, who owes it, FAQ — all in readable sentences
 * ``/indicator/<slug>/``     one page per indicator (37): full ranking with sources
 * ``/data/``                 every dataset with download links (Google Dataset Search)
+* ``/python/``               the debt-atlas Python library: install, quick start, every function
 * ``/support/``              donation options (PATREON_URL, CRYPTO_DONATIONS) and other ways to help
 * ``sitemap.xml``, ``robots.txt``, ``404.html``
 
@@ -38,6 +39,7 @@ from urllib.parse import urlencode
 import pandas as pd
 
 from debt_atlas._meta import RAW_BASE, REPO_URL, SITE_URL
+from src import library_docs
 from src.catalog import CATEGORIES, CATEGORY_BY_ID, COMMON_NAMES, INDICATOR_BY_ID, INDICATORS, SOURCE_DIRECTORY
 from src.indicator_data import format_value
 
@@ -177,6 +179,7 @@ pre{background:#0f1b2d;color:#e6edf6;padding:12px 14px;border-radius:8px;overflo
 .pill{display:inline-block;background:#e8f0fb;color:var(--blue-d);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700}
 ul.cols{columns:3 220px;padding-left:18px}
 footer{border-top:1px solid var(--line);background:var(--paper);font-size:13px;color:var(--muted);padding:20px 0}
+footer .support{font-size:15px;color:inherit;margin:0 0 10px}footer .support a{font-weight:700}
 @media (prefers-color-scheme:dark){:root{--ink:#e8edf5;--muted:#9aa8bb;--line:#2a3445;--paper:#161d29;--canvas:#0f141d}
  .lead{color:#c9d3e1}th{background:#1c2433}.pill{background:#1d2a40;color:#8fb8f0}a{color:#8fb8f0}}
 """
@@ -203,9 +206,10 @@ def render(page: Page, *, base_url: str, app_url: str | None, generated: str, ve
 {jsonld}
 </head><body>
 <header class="top"><div class="wrap"><a class="brand" href="{root or './'}">🌐 {SITE_NAME}</a>
-<nav><a href="{root}indicator/">Indicators</a><a href="{root}country/">Countries</a><a href="{root}data/">Data &amp; API</a>{app_link}<a href="{REPO_URL}">GitHub</a><a href="{root}support/">❤ Support</a></nav></div></header>
+<nav><a href="{root}indicator/">Indicators</a><a href="{root}country/">Countries</a><a href="{root}data/">Data &amp; API</a><a href="{root}python/">Python</a>{app_link}<a href="{REPO_URL}">GitHub</a><a href="{root}support/">❤ Support</a></nav></div></header>
 <main><div class="wrap">{page.body}</div></main>
-<footer><div class="wrap">{SITE_NAME} — open source (MIT) by {AUTHOR} and contributors · Data: World Bank, IMF, SIPRI, WHO, UNESCO and other
+<footer><div class="wrap"><p class="support">Want to help us with future research and open-source projects?
+<a href="{root}support/">❤ Donate</a> · <a href="{REPO_URL}">⭐ GitHub repository</a> · <a href="{root}python/">🐍 Python library</a></p>{SITE_NAME} — open source (MIT) by {AUTHOR} and contributors · Data: World Bank, IMF, SIPRI, WHO, UNESCO and other
 providers named on each value · Updated {generated} · <a href="{REPO_URL}">Source code</a> · <a href="{root}data/">Download the data</a> · <a href="{root}support/">Support the project</a></div></footer>
 </body></html>
 """
@@ -518,6 +522,28 @@ def home_page(data: SiteData, *, base_url: str, app_url: str | None) -> Page:
     return Page("", f"{SITE_NAME} — Government Debt, Spending & Who Owes Whom for Every Country", description, body, schemas, priority=1.0)
 
 
+def python_page() -> Page:
+    rows = "".join(f"<tr><td><code>da.{esc(name)}</code></td><td>{esc(what)}</td></tr>" for name, what in library_docs.FUNCTIONS)
+    body = ('<h1>debt-atlas — the Python library</h1>'
+            f'<p class="lead">{esc(library_docs.TAGLINE)}</p>'
+            f'<pre>{esc(library_docs.INSTALL)}</pre>'
+            f'<p><a class="btn" href="{library_docs.PYPI_URL}">debt-atlas on PyPI</a>'
+            f'<a class="btn alt" href="{library_docs.DOCS_URL}">Full documentation</a></p>'
+            f'<h2>Quick start</h2><pre>{esc(library_docs.QUICKSTART)}</pre>'
+            '<h2>Every function</h2><div class="tablewrap"><table><thead><tr><th>Function</th><th>Returns</th></tr></thead>'
+            f'<tbody>{rows}</tbody></table></div>'
+            f'<h2>Command line</h2><pre>{esc(library_docs.CLI)}</pre>'
+            '<p class="note">' + re.sub(r"`([^`]+)`", r"<code>\1</code>", esc(library_docs.NOTES)) + '</p>')
+    description = ("debt-atlas: sovereign debt, government spending and who-owes-whom data for every country in one line of "
+                   "Python — pip install debt-atlas. World Bank and IMF data as pandas DataFrames with sources.")
+    schema = {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "debt-atlas",
+              "applicationCategory": "DeveloperApplication", "operatingSystem": "Any", "programmingLanguage": "Python",
+              "downloadUrl": library_docs.PYPI_URL, "license": "https://opensource.org/licenses/MIT",
+              "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": AUTHOR}}
+    return Page("python/", f"debt-atlas Python Library — Sovereign Debt & Government Spending Data | {SITE_NAME}",
+                description, body, [schema], priority=0.8)
+
+
 @dataclass
 class Funding:
     """Donation options, read from repository variables at build time (no code change to add them)."""
@@ -577,6 +603,7 @@ def build(out: Path, *, base_url: str = SITE_URL, app_url: str | None = None, ex
     pages += [country_page(data, iso3, base_url=base_url, app_url=app_url) for iso3 in data.countries["iso3"]]
     pages += [indicator_page(data, i.id, base_url=base_url, app_url=app_url) for i in INDICATORS]
     pages.append(support_page(funding or Funding()))
+    pages.append(python_page())
 
     if out.exists():
         shutil.rmtree(out)

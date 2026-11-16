@@ -1,4 +1,4 @@
-# Data validation — 2026-11-09 12:10 UTC
+# Data validation — 2026-11-16 12:13 UTC
 
 **16 passed · 0 warnings · 0 failures**
 
@@ -31,9 +31,9 @@
 | gov_debt_gdp | GGXWDG_NGDP | 194 | 2026 | PASS  |
 | gov_debt_gdp | GG_DEBT_GDP | 88 | 2024 | PASS  |
 | fiscal_balance_gdp | GGXCNL_NGDP | 197 | 2026 | PASS  |
-| external_debt_usd | DT.DOD.DECT.CD | 121 | 2024 | PASS  |
-| external_debt_gni | DT.DOD.DECT.GN.ZS | 121 | 2024 | PASS  |
-| debt_service_exports | DT.TDS.DECT.EX.ZS | 119 | 2024 | PASS  |
+| external_debt_usd | DT.DOD.DECT.CD | 122 | 2025 | PASS  |
+| external_debt_gni | DT.DOD.DECT.GN.ZS | 122 | 2025 | PASS  |
+| debt_service_exports | DT.TDS.DECT.EX.ZS | 120 | 2025 | PASS  |
 | interest_pct_revenue | GC.XPN.INTP.RV.ZS | 154 | 2024 | PASS  |
 | private_debt_gdp | Privatedebt_all | 44 | 2024 | PASS  |
 | gov_expenditure_gdp | exp | 151 | 2024 | PASS  |

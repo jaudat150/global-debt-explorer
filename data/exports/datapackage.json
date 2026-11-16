@@ -3,7 +3,7 @@
   "title": "Global Debt & Fiscal Atlas — open data export",
   "description": "Sovereign debt, deficits, government spending, revenue, macro and development indicators for every country, plus bilateral who-owes-whom debt, with full provenance.",
   "version": "3.4.0",
-  "created": "2026-11-09T12:10:51+00:00",
+  "created": "2026-11-16T12:13:11+00:00",
   "homepage": "https://github.com/Jaudat150/global-debt-explorer",
   "licenses": [
     {
@@ -73,7 +73,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8",
       "description": "Latest value of every indicator for every country, with provenance.",
-      "rows": 6350,
+      "rows": 6353,
       "schema": {
         "fields": [
           {
@@ -146,7 +146,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8",
       "description": "Every year of every upstream series (one row per source; nothing merged or filled).",
-      "rows": 189115,
+      "rows": 189496,
       "schema": {
         "fields": [
           {
